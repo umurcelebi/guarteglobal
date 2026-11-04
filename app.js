@@ -235,7 +235,7 @@ const I18N = {
     }
   },
 
-  el: {
+  gr: {
     metaTitle: 'GUARTE GLOBAL | Διεθνείς Ναυτιλιακές Μεταφορές & Χονδρικό Εμπόριο',
     brandSub: 'HELLAS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.',
     nav: {
@@ -714,8 +714,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Check saved language or URL param
   const urlParams = new URLSearchParams(window.location.search);
-  const langParam = urlParams.get('lang');
-  const savedLang = localStorage.getItem('guarte_lang');
+  const langParam = urlParams.get('lang') === 'el' ? 'gr' : urlParams.get('lang');
+  const rawSaved = localStorage.getItem('guarte_lang');
+  const savedLang = rawSaved === 'el' ? 'gr' : rawSaved;
   if (langParam && I18N[langParam]) {
     setLanguage(langParam);
   } else if (savedLang && I18N[savedLang]) {
@@ -794,10 +795,11 @@ function initLanguageDropdown() {
 }
 
 function setLanguage(lang) {
+  if (lang === 'el') lang = 'gr';
   if (!I18N[lang]) return;
   currentLang = lang;
   localStorage.setItem('guarte_lang', lang);
-  document.documentElement.lang = lang;
+  document.documentElement.lang = lang === 'gr' ? 'el' : lang;
 
   const t = I18N[lang];
   document.title = t.metaTitle;
@@ -844,7 +846,7 @@ function setLanguage(lang) {
   // Render Map Corridor Pills & SVG Country Label
   const svgGreeceLabel = document.getElementById('svgGreeceLabel');
   if (svgGreeceLabel) {
-    svgGreeceLabel.textContent = lang === 'el' ? 'ΕΛΛΑΔΑ' : lang === 'tr' ? 'YUNANİSTAN' : 'GREECE';
+    svgGreeceLabel.textContent = lang === 'gr' ? 'ΕΛΛΑΔΑ' : lang === 'tr' ? 'YUNANİSTAN' : 'GREECE';
   }
 
   const corridorContainer = document.getElementById('mapCorridorPills');
