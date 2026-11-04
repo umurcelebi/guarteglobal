@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GUARTE GLOBAL | International Maritime &amp; Wholesale Trade Solutions</title>
+  <meta name="description" content="GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (Guarte Hellas I.K.E.) — International maritime freight, wholesale wood products, construction materials, and sanitary equipment. Headquartered in Thermi, Thessaloniki, Greece." />
+
+  <!-- Google Fonts: Full Latin, Latin-Ext (Turkish) & Greek Support -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <!-- Brand Logo (Custom Vector Emblem combining G + Golden Bridge Arch + Maritime Vessel) -->
+      <a href="#home" class="brand-logo" aria-label="Guarte Global Home">
+        <svg class="brand-crest" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer Stylized G -->
+          <path d="M50.5 18.5C46.2 12.2 39.1 8 31 8C17.7 8 7 18.7 7 32C7 45.3 17.7 56 31 56C43.2 56 53.1 47.1 54.7 35.5H33V28.5H56V55H48.5V48.8C44.1 53.3 37.9 56 31 56" stroke="#0A192F" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Golden Bridge Arch & Horizon Wave -->
+          <path d="M12 43C20 35 33 34 49 41" stroke="#C5A059" stroke-width="3" stroke-linecap="round"/>
+          <path d="M16 47C24 40 35 40 47 45" stroke="#D6B574" stroke-width="2" stroke-linecap="round"/>
+          <!-- Bridge Pylons / Ship Superstructure Silhouette -->
+          <path d="M23 24V36M31 21V35M20 27H34" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+          <path d="M18 33L22 28H35L39 33H18Z" fill="#0A192F"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">GUARTE</span>
+          <span class="brand-sub" data-i18n="brandSub">GLOBAL MARITIME &amp; TRADE</span>
+        </div>
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="#services" class="nav-link" data-i18n="nav.services">Our Services</a>
+        <a href="#divisions" class="nav-link" data-i18n="nav.divisions">Trade Divisions</a>
+        <a href="#network" class="nav-link" data-i18n="nav.network">Global Network</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <!-- Language Selector & CTA -->
+      <div class="header-actions">
+        <div class="lang-dropdown" id="langDropdown">
+          <button type="button" class="lang-trigger" id="langTrigger" aria-label="Select Language">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span id="currentLangLabel">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="lang-menu" role="menu">
+            <button type="button" class="lang-option active" data-lang="en">
+              <span>English</span>
+              <span class="lang-code">EN</span>
+            </button>
+            <button type="button" class="lang-option" data-lang="el">
+              <span>Ελληνικά</span>
+              <span class="lang-code">EL</span>
+            </button>
+            <button type="button" class="lang-option" data-lang="tr">
+              <span>Türkçe</span>
+              <span class="lang-code">TR</span>
+            </button>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-navy header-cta">
+          <span data-i18n="nav.cta">Get in Touch</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION (Dual Maritime Corridor Showcase)
+       ======================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="hero-backgrounds">
+      <div class="hero-slide-bg active" style="background-image: url('assets/images/hero-corinth.jpg');"></div>
+      <div class="hero-slide-bg" style="background-image: url('assets/images/hero-bosphorus.jpg');"></div>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-kicker" id="heroKicker">BRIDGING MARKETS • BUILDING PARTNERSHIPS</span>
+        <div class="hero-divider"></div>
+        <h1 class="hero-title" id="heroTitle">
+          Connecting Opportunities <em>Across Borders</em>
+        </h1>
+        <p class="hero-description" id="heroDescription">
+          Guarte Hellas is your trusted partner in international maritime freight and wholesale trade—delivering reliable shipping solutions and certified building, wood, and sanitary materials across global markets.
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-gold">
+            <span data-i18n="hero.btnServices">Our Services</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#about" class="btn btn-outline-light">
+            <span data-i18n="hero.btnAbout">About Guarte</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right-side Vertical Editorial Callout (from Draft 2) -->
+      <aside class="hero-aside" aria-hidden="true">
+        <div class="hero-aside-list" id="heroAsideList">
+          <span>PEOPLE</span>
+          <span>PRODUCTS</span>
+          <span>MARKETS</span>
+          <span>OPPORTUNITIES</span>
+        </div>
+        <div class="hero-aside-line"></div>
+        <p class="hero-aside-motto" data-i18n="hero.asideMotto">
+          FROM GREECE TO A MORE CONNECTED TOMORROW
+        </p>
+      </aside>
+    </div>
+
+    <!-- Bottom Coordinates & Route Switcher -->
+    <div class="hero-bottom-bar">
+      <div class="container hero-bottom-inner">
+        <div class="hero-coords">
+          <span class="coords-dot"></span>
+          <span id="heroCoordsText">THESSALONIKI • CORINTH CORRIDOR  |  37.9347° N, 22.9839° E</span>
+        </div>
+        <div class="hero-scene-tabs" role="tablist">
+          <button type="button" class="scene-tab active" data-slide="0">
+            <span class="scene-num">01</span>
+            <span data-i18n="hero.tab1">Corinth &amp; Aegean Route</span>
+          </button>
+          <button type="button" class="scene-tab" data-slide="1">
+            <span class="scene-num">02</span>
+            <span data-i18n="hero.tab2">Straits &amp; Global Route</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4-PILLAR VALUE STRIP
+       ======================================================================== -->
+  <div class="pillars-strip">
+    <div class="container pillars-grid">
+      <!-- Pillar 1: Global Maritime Reach -->
+      <div class="pillar-item">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3.6 9h16.8M3.6 15h16.8"></path>
+            <path d="M11.5 3a17 17 0 0 0 0 18M12.5 3a17 17 0 0 1 0 18"></path>
+          </svg>
+        </div>
+        <div>
+          <h2 class="pillar-title" data-i18n="pillars.p1Title">Global Maritime Reach</h2>
+          <p class="pillar-desc" data-i18n="pillars.p1Desc">Direct sea freight &amp; port access across key trade corridors</p>
+        </div>
+      </div>
+
+      <!-- Pillar 2: Wood, Construction & Sanitary Portfolio -->
+      <div class="pillar-item">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="12" cy="12" r="9"></circle>
+            <circle cx="12" cy="12" r="5.5"></circle>
+            <circle cx="12" cy="12" r="2"></circle>
+            <path d="M12 3v2M12 19v2M3 12h2M19 12h2"></path>
+          </svg>
+        </div>
+        <div>
+          <h2 class="pillar-title" data-i18n="pillars.p2Title">Certified Trade Portfolio</h2>
+          <p class="pillar-desc" data-i18n="pillars.p2Desc">Wood products, construction materials &amp; sanitary ware</p>
+        </div>
+      </div>
+
+      <!-- Pillar 3: Trusted Partnerships -->
+      <div class="pillar-item">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+          </svg>
+        </div>
+        <div>
+          <h2 class="pillar-title" data-i18n="pillars.p3Title">Trusted Partnerships</h2>
+          <p class="pillar-desc" data-i18n="pillars.p3Desc">Long-term commercial reliability &amp; transparent execution</p>
+        </div>
+      </div>
+
+      <!-- Pillar 4: Sustainable Supply Chains -->
+      <div class="pillar-item">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+          </svg>
+        </div>
+        <div>
+          <h2 class="pillar-title" data-i18n="pillars.p4Title">Sustainable Supply Chains</h2>
+          <p class="pillar-desc" data-i18n="pillars.p4Desc">Responsible sourcing &amp; resilient logistics for tomorrow</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       ABOUT GUARTE & INTERACTIVE GLOBAL NETWORK MAP
+       ======================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-top-grid">
+        <!-- Left Column: Corporate Narrative -->
+        <div class="about-narrative">
+          <span class="eyebrow" data-i18n="about.eyebrow">ABOUT GUARTE</span>
+          <h2 class="section-title">
+            <span data-i18n="about.titleLine1">More Than Trade</span><br />
+            <em data-i18n="about.titleAccent">A Stronger Tomorrow</em>
+          </h2>
+          <p data-i18n="about.p1">
+            Headquartered in Thermi, Thessaloniki, Greece, GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (I.K.E.) operates at the strategic maritime crossroads of Europe, the Mediterranean, the Black Sea, and the Middle East.
+          </p>
+          <p data-i18n="about.p2">
+            We combine deep regional expertise in international sea transport with specialized wholesale trading in industrial wood products, structural construction materials, and architectural sanitary equipment—creating enduring value between producers and global markets.
+          </p>
+
+          <div class="about-legal-badge">
+            <strong data-i18n="about.legalBadgeTitle">CORPORATE STRUCTURE &amp; SECTOR CLASSIFICATION</strong>
+            <span data-i18n="about.legalBadgeText">GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (Monoprosopi I.K.E.) • NACE 46.73 / 46.83 Wholesale of Wood, Construction Materials &amp; Sanitary Equipment • International Maritime Trade</span>
+          </div>
+
+          <div class="about-actions">
+            <a href="#divisions" class="btn btn-navy">
+              <span data-i18n="about.btnStory">Explore Trade Divisions</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-outline-dark" data-i18n="about.btnContact">Partner With Us</a>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Greece / Thessaloniki & Straits Maritime Corridor Map -->
+        <div class="network-map-card" id="network">
+          <div class="map-header-row">
+            <div>
+              <span class="eyebrow" style="margin-bottom:0.25rem;">THESSALONIKI NEXUS</span>
+              <h3 style="font-family:var(--font-serif); font-size:1.45rem; color:var(--navy-900);" data-i18n="about.mapHqLabel">
+                THESSALONIKI, GREECE (HQ)
+              </h3>
+            </div>
+            <div class="map-motto-tag" data-i18n="about.mapMotto">
+              A MORE CONNECTED TOMORROW
+            </div>
+          </div>
+
+          <!-- Precision Stylized SVG Map of Europe, Mediterranean, Black Sea & MENA with Golden Arcs -->
+          <div class="trade-map-svg-wrap">
+            <svg class="trade-map-svg" viewBox="0 0 680 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Guarte Global Maritime Trade Routes">
+              <!-- Subtle Graticule Grid -->
+              <g stroke="#DCE3EC" stroke-width="0.7" stroke-dasharray="3 3">
+                <line x1="0" y1="80" x2="680" y2="80" />
+                <line x1="0" y1="160" x2="680" y2="160" />
+                <line x1="0" y1="240" x2="680" y2="240" />
+                <line x1="0" y1="320" x2="680" y2="320" />
+                <line x1="140" y1="0" x2="140" y2="400" />
+                <line x1="280" y1="0" x2="280" y2="400" />
+                <line x1="420" y1="0" x2="420" y2="400" />
+                <line x1="560" y1="0" x2="560" y2="400" />
+              </g>
+
+              <!-- Stylized Continental Landmasses (Europe, Balkans/Greece, Anatolia, Levant, North Africa) -->
+              <!-- Western & Central Europe -->
+              <path d="M55 190 L48 150 L85 115 L135 95 L165 60 L225 45 L295 55 L345 85 L370 125 L345 155 L315 168 L295 205 L270 185 L235 160 L220 205 L195 210 L185 175 L145 180 L105 215 L60 210 Z" fill="#DFE6EF" stroke="#CBD5E1" stroke-width="1"/>
+              <!-- UK / Scandinavia hints -->
+              <path d="M105 65 L128 45 L142 75 L115 90 Z" fill="#DFE6EF"/>
+              <path d="M210 15 L265 10 L280 38 L220 40 Z" fill="#DFE6EF"/>
+              <!-- Greece & Balkans Peninsula -->
+              <path d="M295 168 L345 162 L365 188 L342 215 L332 248 L312 252 L302 220 Z" fill="#CFD9E6" stroke="#B8C6D8" stroke-width="1.2"/>
+              <!-- Türkiye / Anatolia & Black Sea South Coast -->
+              <path d="M368 192 L465 182 L515 195 L505 235 L445 245 L375 238 L360 215 Z" fill="#D5DFEC" stroke="#B8C6D8" stroke-width="1.2"/>
+              <!-- Eastern Europe / Black Sea North & Caucasus -->
+              <path d="M370 125 L485 105 L565 135 L545 185 L490 175 L455 150 L395 158 Z" fill="#DFE6EF"/>
+              <!-- Middle East & Arabian Peninsula -->
+              <path d="M475 242 L555 235 L625 285 L595 365 L505 375 L468 305 Z" fill="#DFE6EF" stroke="#CBD5E1" stroke-width="1"/>
+              <!-- North Africa Coastline -->
+              <path d="M65 255 L175 245 L245 275 L335 288 L435 292 L462 315 L445 390 L55 390 Z" fill="#DFE6EF" stroke="#CBD5E1" stroke-width="1"/>
+
+              <!-- Trade Route Arcs from Thessaloniki, Greece (X:326, Y:205) -->
+              <!-- 1. Thessaloniki -> Central/Western Europe (Hamburg / Rotterdam / Munich) -->
+              <path class="map-route-solid" d="M326 205 Q 245 95 165 118" />
+              <path class="map-route-arc" d="M326 205 Q 245 95 165 118" />
+
+              <!-- 2. Thessaloniki -> Western Mediterranean (Italy / Spain / France) -->
+              <path class="map-route-solid" d="M326 205 Q 210 190 95 202" />
+              <path class="map-route-arc" d="M326 205 Q 210 190 95 202" />
+
+              <!-- 3. Thessaloniki -> Istanbul / Straits & Black Sea Hubs (Constanta / Odessa / Batumi) -->
+              <path class="map-route-solid" d="M326 205 Q 375 165 425 162" />
+              <path class="map-route-arc" d="M326 205 Q 375 165 425 162" />
+
+              <!-- 4. Thessaloniki -> Anatolia / Türkiye Industrial Centers -->
+              <path class="map-route-solid" d="M326 205 Q 380 205 435 215" />
+              <path class="map-route-arc" d="M326 205 Q 380 205 435 215" />
+
+              <!-- 5. Thessaloniki -> Eastern Mediterranean & Levant / Middle East -->
+              <path class="map-route-solid" d="M326 205 Q 435 245 535 285" />
+              <path class="map-route-arc" d="M326 205 Q 435 245 535 285" />
+
+              <!-- 6. Thessaloniki -> North Africa / Alexandria / Suez Corridor -->
+              <path class="map-route-solid" d="M326 205 Q 360 265 405 305" />
+              <path class="map-route-arc" d="M326 205 Q 360 265 405 305" />
+
+              <!-- 7. Thessaloniki -> Balkans / Central Europe Corridor -->
+              <path class="map-route-solid" d="M326 205 Q 305 140 265 112" />
+              <path class="map-route-arc" d="M326 205 Q 305 140 265 112" />
+
+              <!-- Destination Port Nodes -->
+              <g fill="#A6823F">
+                <circle cx="165" cy="118" r="4" />
+                <circle cx="95" cy="202" r="4" />
+                <circle cx="265" cy="112" r="4" />
+                <circle cx="425" cy="162" r="4" />
+                <circle cx="435" cy="215" r="4.5" />
+                <circle cx="535" cy="285" r="4" />
+                <circle cx="405" cy="305" r="4" />
+              </g>
+
+              <!-- Primary Nexus: THESSALONIKI / GREECE HQ (326, 205) -->
+              <circle class="hub-pulse" cx="326" cy="205" r="14" />
+              <circle cx="326" cy="205" r="7.5" fill="#0A192F" stroke="#C5A059" stroke-width="2.5" />
+              <!-- Straits Secondary Maritime Node (366, 194) -->
+              <circle cx="366" cy="194" r="5" fill="#C5A059" stroke="#0A192F" stroke-width="1.5" />
+
+              <!-- Map Label for GREECE HQ -->
+              <rect x="232" y="218" width="98" height="24" rx="4" fill="#0A192F" />
+              <text x="281" y="234" text-anchor="middle" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="700" letter-spacing="1.8">GREECE HQ</text>
+            </svg>
+          </div>
+
+          <!-- Corridor Pills -->
+          <div class="map-corridor-pills" id="mapCorridorPills">
+            <span class="corridor-pill">Aegean &amp; Mediterranean Sea Lanes</span>
+            <span class="corridor-pill">Türkiye &amp; Black Sea Corridor</span>
+            <span class="corridor-pill">Central &amp; Western Europe</span>
+            <span class="corridor-pill">Middle East &amp; North Africa</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Split Showcase: Architectural Timber Visual (Draft 1) + Corporate Principles (Replacing Fake Numbers) -->
+      <div class="about-showcase-grid">
+        <div class="wood-visual-panel">
+          <img src="assets/images/wood-craft.jpg" alt="Engineered Wood, MDF, Plywood and Construction Materials" loading="lazy" />
+          <div class="wood-visual-overlay">
+            <div class="wood-keywords" id="woodKeywords">
+              QUALITY<br />
+              PEOPLE<br />
+              TRUST<br />
+              GLOBAL REACH
+            </div>
+          </div>
+        </div>
+
+        <div class="corporate-values-panel">
+          <div class="values-header">
+            <div class="values-kicker" data-i18n="about.valuesKicker">LOCAL ROOTS • GLOBAL HORIZONS</div>
+            <h3 class="values-heading" data-i18n="about.valuesHeading">Built on Principle, Driven by Precision</h3>
+          </div>
+
+          <div class="values-pillars-row">
+            <div class="value-col">
+              <div class="value-roman">I.</div>
+              <h4 class="value-name" data-i18n="about.v1Name">Uncompromising Trust</h4>
+              <p class="value-text" data-i18n="about.v1Text">
+                Structured under Greek &amp; EU corporate law (I.K.E.), ensuring full contractual compliance and transparency across every shipment.
+              </p>
+            </div>
+            <div class="value-col">
+              <div class="value-roman">II.</div>
+              <h4 class="value-name" data-i18n="about.v2Name">Verified Material Quality</h4>
+              <p class="value-text" data-i18n="about.v2Text">
+                Direct factory-to-port quality assurance across MDF, plywood, structural building supplies, and sanitary installations.
+              </p>
+            </div>
+            <div class="value-col">
+              <div class="value-roman">III.</div>
+              <h4 class="value-name" data-i18n="about.v3Name">Integrated Sea Logistics</h4>
+              <p class="value-text" data-i18n="about.v3Text">
+                End-to-end coordination of container freight, bulk vessel chartering, customs clearance, and regional distribution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       OUR SERVICES SECTION (4 Flagship Cards from Draft 2)
+       ======================================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header-bar">
+        <div>
+          <span class="eyebrow" data-i18n="services.eyebrow">OUR SERVICES</span>
+          <h2 class="section-title" data-i18n="services.title">Integrated Maritime &amp; Trade Solutions</h2>
+        </div>
+        <p class="section-tagline-right" data-i18n="services.taglineRight">
+          End-to-end shipping and wholesale trade solutions, tailored to your needs.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Card 1: Trading & Sourcing -->
+        <article class="service-card" data-service-index="0">
+          <div class="service-img-wrap">
+            <img src="assets/images/wood-craft.jpg" alt="Trading & Sourcing - Wood and Construction Materials" loading="lazy" />
+          </div>
+          <div class="service-body">
+            <div class="service-top-row">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="service-title">Trading &amp; Sourcing</h3>
+                <p class="service-short">Connecting certified wood, construction, and sanitary products with global markets.</p>
+              </div>
+            </div>
+            <div class="service-footer">
+              <span class="service-learn-label">Service Specifications</span>
+              <span class="service-arrow">→</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Maritime Import & Export -->
+        <article class="service-card" data-service-index="1">
+          <div class="service-img-wrap">
+            <img src="assets/images/port-loading.jpg" alt="Maritime Import & Export - Container Vessel Operations" loading="lazy" />
+          </div>
+          <div class="service-body">
+            <div class="service-top-row">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                  <path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"></path>
+                  <path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"></path>
+                  <path d="M12 10v4"></path>
+                  <path d="M12 2v3"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="service-title">Maritime Import &amp; Export</h3>
+                <p class="service-short">Efficient sea freight, vessel chartering, and reliable cross-border trade flows.</p>
+              </div>
+            </div>
+            <div class="service-footer">
+              <span class="service-learn-label">Service Specifications</span>
+              <span class="service-arrow">→</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Supply & Distribution -->
+        <article class="service-card" data-service-index="2">
+          <div class="service-img-wrap">
+            <img src="assets/images/warehouse-supply.jpg" alt="Supply & Distribution Warehouse Logistics" loading="lazy" />
+          </div>
+          <div class="service-body">
+            <div class="service-top-row">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M3 21V8l9-5 9 5v13"></path>
+                  <path d="M9 21v-6h6v6"></path>
+                  <path d="M9 10h6"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="service-title">Supply &amp; Distribution</h3>
+                <p class="service-short">Connecting manufacturers and regional markets through synchronized port-to-site logistics.</p>
+              </div>
+            </div>
+            <div class="service-footer">
+              <span class="service-learn-label">Service Specifications</span>
+              <span class="service-arrow">→</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Trade Consultancy -->
+        <article class="service-card" data-service-index="3">
+          <div class="service-img-wrap">
+            <img src="assets/images/trade-consultancy.jpg" alt="International Trade Consultancy" loading="lazy" />
+          </div>
+          <div class="service-body">
+            <div class="service-top-row">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="service-title">Trade Consultancy</h3>
+                <p class="service-short">Your strategic solution partner in international maritime commerce and market entry.</p>
+              </div>
+            </div>
+            <div class="service-footer">
+              <span class="service-learn-label">Service Specifications</span>
+              <span class="service-arrow">→</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CORE TRADE DIVISIONS SECTION (NACE 46.73 / 46.83 Portfolio)
+       ======================================================================== -->
+  <section class="divisions-section" id="divisions">
+    <div class="container">
+      <div class="section-header-bar" style="margin-bottom: 1rem;">
+        <div>
+          <span class="eyebrow" data-i18n="divisions.eyebrow">CORE TRADE DIVISIONS</span>
+          <h2 class="section-title" data-i18n="divisions.title">Specialized Wholesale Portfolio</h2>
+        </div>
+        <p class="section-subtitle" data-i18n="divisions.subtitle">
+          Aligned with our official commercial registration (NACE 46.73 / 46.83) and maritime logistics capabilities, we focus on three core industrial pillars.
+        </p>
+      </div>
+
+      <div class="divisions-grid">
+        <!-- Division 1: Wood & Engineered Panels -->
+        <div class="division-card">
+          <span class="division-badge" data-i18n="divisions.d1Badge">DIVISION 01 • TIMBER &amp; PANELS</span>
+          <h3 class="division-title" data-i18n="divisions.d1Title">Wood &amp; Engineered Panels</h3>
+          <p class="division-desc" data-i18n="divisions.d1Desc">
+            High-density engineered wood products and structural timber sourced from certified mills for furniture manufacturing, interior architecture, and construction.
+          </p>
+          <div class="division-tags" id="divisionTags1">
+            <span class="division-tag">MDF &amp; HDF Panels</span>
+            <span class="division-tag">Particle Board (PB)</span>
+            <span class="division-tag">Birch &amp; Marine Plywood</span>
+            <span class="division-tag">Laminate &amp; Melamine</span>
+            <span class="division-tag">Structural Timber</span>
+          </div>
+        </div>
+
+        <!-- Division 2: Construction Materials -->
+        <div class="division-card">
+          <span class="division-badge" data-i18n="divisions.d2Badge">DIVISION 02 • STRUCTURAL SUPPLIES</span>
+          <h3 class="division-title" data-i18n="divisions.d2Title">Construction Materials</h3>
+          <p class="division-desc" data-i18n="divisions.d2Desc">
+            Comprehensive wholesale supply of heavy and finishing building materials designed to meet rigorous European commercial and residential project standards.
+          </p>
+          <div class="division-tags" id="divisionTags2">
+            <span class="division-tag">Structural Building Supplies</span>
+            <span class="division-tag">Architectural Cladding</span>
+            <span class="division-tag">Insulation &amp; Drywall Systems</span>
+            <span class="division-tag">Industrial Fasteners &amp; Profiles</span>
+            <span class="division-tag">Project Bulk Supply</span>
+          </div>
+        </div>
+
+        <!-- Division 3: Sanitary Equipment & Ware -->
+        <div class="division-card">
+          <span class="division-badge" data-i18n="divisions.d3Badge">DIVISION 03 • SANITARY &amp; HYDRONIC</span>
+          <h3 class="division-title" data-i18n="divisions.d3Title">Sanitary Equipment &amp; Ware</h3>
+          <p class="division-desc" data-i18n="divisions.d3Desc">
+            Complete wholesale range of modern architectural sanitary ceramics, bathroom fixtures, and commercial plumbing hardware for international distributors.
+          </p>
+          <div class="division-tags" id="divisionTags3">
+            <span class="division-tag">Architectural Sanitary Ceramics</span>
+            <span class="division-tag">Bathroom Fixtures &amp; Fittings</span>
+            <span class="division-tag">Commercial Plumbing Systems</span>
+            <span class="division-tag">Hydronic &amp; Valve Equipment</span>
+            <span class="division-tag">Hospitality Project Packages</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       NIGHT PANORAMIC CTA BANNER (From Draft 2: "LET'S BUILD WHAT'S NEXT")
+       ======================================================================== -->
+  <section class="cta-banner" style="background-image: url('assets/images/cta-night-strait.jpg');">
+    <div class="cta-banner-overlay"></div>
+    <div class="container cta-banner-inner">
+      <div>
+        <h2 class="cta-banner-title" data-i18n="ctaBanner.title">LET'S BUILD WHAT'S NEXT</h2>
+        <p class="cta-banner-sub" data-i18n="ctaBanner.sub">New markets. Stronger partnerships. A more connected world.</p>
+      </div>
+      <a href="#contact" class="btn btn-outline-light">
+        <span data-i18n="ctaBanner.btn">Contact Us</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CONTACT & REGISTERED HEADQUARTERS SECTION
+       ======================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header-bar">
+        <div>
+          <span class="eyebrow" data-i18n="contact.eyebrow">GET IN TOUCH</span>
+          <h2 class="section-title" data-i18n="contact.title">Corporate Headquarters &amp; Inquiries</h2>
+        </div>
+        <p class="section-subtitle" data-i18n="contact.subtitle">
+          Connect with our Thessaloniki headquarters for maritime freight inquiries, wholesale commodity specifications, or long-term partnership opportunities.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left Card: Official Registered Seat Details -->
+        <div class="hq-card">
+          <h3 class="hq-title" data-i18n="contact.hqTitle">Registered Corporate Office</h3>
+          <div class="hq-entity" data-i18n="contact.hqEntity">GUARTE HELLAS SOLE SHAREHOLDER CO. P.C.</div>
+
+          <div class="hq-details-list">
+            <!-- Address -->
+            <div class="hq-detail-item">
+              <div class="hq-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="hq-detail-label" data-i18n="contact.addressLabel">REGISTERED ADDRESS</div>
+                <div class="hq-detail-value" data-i18n="contact.addressValue">
+                  Straitsa 2, Postal Code: 57001, Thermi, Thessaloniki, Greece
+                </div>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="hq-detail-item">
+              <div class="hq-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="hq-detail-label" data-i18n="contact.emailLabel">ELECTRONIC MAIL</div>
+                <div class="hq-detail-value">
+                  <a href="mailto:info@guarteglobal.com">info@guarteglobal.com</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Web Domain -->
+            <div class="hq-detail-item">
+              <div class="hq-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="hq-detail-label" data-i18n="contact.domainLabel">OFFICIAL PORTAL</div>
+                <div class="hq-detail-value">
+                  <a href="https://www.guarteglobal.com">www.guarteglobal.com</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Legal Form & NACE -->
+            <div class="hq-detail-item">
+              <div class="hq-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="hq-detail-label" data-i18n="contact.legalLabel">LEGAL STATUS &amp; NACE</div>
+                <div class="hq-detail-value" data-i18n="contact.legalValue">
+                  Sole Shareholder Private Company (Monoprosopi I.K.E.) • NACE 46.73 / 46.83
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Card: Direct Inquiry Form -->
+        <div class="contact-form-card">
+          <form id="contactForm">
+            <div class="form-grid-row">
+              <div class="form-group">
+                <label for="inquiryName" class="form-label" data-i18n="contact.formName">Full Name / Company</label>
+                <input
+                  type="text"
+                  id="inquiryName"
+                  class="form-input"
+                  required
+                  data-i18n-placeholder="contact.formNamePlaceholder"
+                  placeholder="Your name or organization"
+                />
+              </div>
+              <div class="form-group">
+                <label for="inquiryEmail" class="form-label" data-i18n="contact.formEmail">Business Email</label>
+                <input
+                  type="email"
+                  id="inquiryEmail"
+                  class="form-input"
+                  required
+                  data-i18n-placeholder="contact.formEmailPlaceholder"
+                  placeholder="name@company.com"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inquiryDivision" class="form-label" data-i18n="contact.formDivision">Inquiry Department</label>
+              <select id="inquiryDivision" class="form-select"></select>
+            </div>
+
+            <div class="form-group">
+              <label for="inquiryMessage" class="form-label" data-i18n="contact.formMessage">Project or Shipment Details</label>
+              <textarea
+                id="inquiryMessage"
+                class="form-textarea"
+                required
+                data-i18n-placeholder="contact.formMessagePlaceholder"
+                placeholder="Please specify commodity requirements, target ports, or partnership scope..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width: 100%;">
+              <span data-i18n="contact.formSubmit">Send Official Inquiry</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+
+            <div class="form-feedback" id="formFeedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       DARK NAVY PRESTIGE FOOTER (Matches Draft 2 Layout)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Emblem & Tagline -->
+        <div>
+          <a href="#home" class="brand-logo" style="margin-bottom: 0.75rem;">
+            <svg class="brand-crest" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50.5 18.5C46.2 12.2 39.1 8 31 8C17.7 8 7 18.7 7 32C7 45.3 17.7 56 31 56C43.2 56 53.1 47.1 54.7 35.5H33V28.5H56V55H48.5V48.8C44.1 53.3 37.9 56 31 56" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 43C20 35 33 34 49 41" stroke="#C5A059" stroke-width="3" stroke-linecap="round"/>
+              <path d="M16 47C24 40 35 40 47 45" stroke="#D6B574" stroke-width="2" stroke-linecap="round"/>
+              <path d="M23 24V36M31 21V35M20 27H34" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 33L22 28H35L39 33H18Z" fill="#FFFFFF"/>
+            </svg>
+            <div class="brand-text">
+              <span class="brand-name" style="color: #FFFFFF;">GUARTE</span>
+              <span class="brand-sub" style="color: #D6B574;">HELLAS I.K.E.</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            <span data-i18n="footer.motto1">Bridging Markets</span><br />
+            <span data-i18n="footer.motto2">Building Partnerships</span>
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.quickLinks">Quick Links</h4>
+          <div class="footer-links">
+            <a href="#home" data-i18n="nav.home">Home</a>
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#services" data-i18n="nav.services">Our Services</a>
+            <a href="#divisions" data-i18n="nav.divisions">Trade Divisions</a>
+            <a href="#network" data-i18n="nav.network">Global Network</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Our Office -->
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.ourOffice">Our Office</h4>
+          <div class="footer-office-list">
+            <div class="footer-office-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span data-i18n="footer.addressShort">Straitsa 2, 57001 Thermi, Thessaloniki, Greece</span>
+            </div>
+            <div class="footer-office-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:info@guarteglobal.com">info@guarteglobal.com</a>
+            </div>
+            <div class="footer-office-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <a href="https://www.guarteglobal.com">www.guarteglobal.com</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 4: Corporate Channels & Motto -->
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.followUs">Corporate Channels</h4>
+          <div class="footer-social-links">
+            <a href="mailto:info@guarteglobal.com" class="social-btn" aria-label="Email Guarte Global">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="#network" class="social-btn" aria-label="Global Maritime Network">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="footer-motto-line"></div>
+          <div class="footer-motto-words" data-i18n="footer.mottoWords">
+            TRUST   •   SOLUTIONS   •   GROWTH
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright & Legal Disclosures -->
+      <div class="footer-bottom">
+        <div data-i18n="footer.copyright">
+          © 2026 GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (Guarte Hellas I.K.E.). All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <button type="button" data-legal-modal="registry" data-i18n="footer.registry">Corporate Registry Disclosure</button>
+          <button type="button" data-legal-modal="privacy" data-i18n="footer.privacy">Privacy Policy</button>
+          <button type="button" data-legal-modal="terms" data-i18n="footer.terms">Terms of Use</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL DIALOG (Service Specifications & Legal Disclosures)
+       ======================================================================== -->
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Service Details</h3>
+        <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close Modal">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
