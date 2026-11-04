@@ -1,11 +1,11 @@
 /* ==========================================================================
    GUARTE GLOBAL — www.guarteglobal.com
-   Multilingual Dictionary (EN / EL / TR) & Interactive Application Logic
+   Multilingual Dictionary (EN / GR / TR) & Interactive Application Logic
    ========================================================================== */
 
 const I18N = {
   en: {
-    metaTitle: 'GUARTE GLOBAL | International Maritime & Wholesale Trade Solutions',
+    metaTitle: 'GUARTE GLOBAL | International Trade & Wholesale Solutions',
     brandSub: 'GLOBAL TRADE',
     nav: {
       home: 'Home',
@@ -22,15 +22,15 @@ const I18N = {
           kicker: 'BRIDGING MARKETS • BUILDING PARTNERSHIPS',
           titleLine1: 'Connecting Opportunities',
           titleAccent: 'Across Borders',
-          desc: 'Guarte Hellas is your trusted partner in international maritime freight and wholesale trade—delivering reliable shipping solutions and certified building, wood, and sanitary materials across global markets.',
-          coords: 'THESSaloniki • CORINTH CORRIDOR  |  37.9347° N, 22.9839° E'
+          desc: 'Guarte Hellas is your trusted partner in international trade and wholesale supply—delivering reliable commercial solutions and certified building, wood, and sanitary materials across global markets.',
+          coords: 'THESSALONIKI • CORINTH CORRIDOR  |  37.9347° N, 22.9839° E'
         },
         {
-          kicker: 'GLOBAL MARITIME & SUPPLY SOLUTIONS',
-          titleLine1: 'From Strategic Straits',
-          titleAccent: 'To Global Ports',
-          desc: 'Positioned at the crossroads of the Aegean, Mediterranean, and Black Sea corridors, we connect prime manufacturers with international buyers through seamless sea logistics and disciplined trade execution.',
-          coords: 'STRAITS MARITIME CORRIDOR  |  41.0082° N, 28.9784° E'
+          kicker: 'GLOBAL TRADE & SUPPLY SOLUTIONS',
+          titleLine1: 'From Strategic Hubs',
+          titleAccent: 'To Global Markets',
+          desc: 'Positioned at the crossroads of Europe, the Mediterranean, and the Black Sea corridors, we connect prime manufacturers with international buyers through seamless logistics and disciplined trade execution.',
+          coords: 'STRAITS TRADE CORRIDOR  |  41.0082° N, 28.9784° E'
         }
       ],
       btnServices: 'Our Services',
@@ -41,8 +41,8 @@ const I18N = {
       tab2: 'Straits & Global Route'
     },
     pillars: {
-      p1Title: 'Global Maritime Reach',
-      p1Desc: 'Direct sea freight & port access across key trade corridors',
+      p1Title: 'Global Reach',
+      p1Desc: 'Direct access to international markets & key trade corridors',
       p2Title: 'Certified Trade Portfolio',
       p2Desc: 'Wood products, construction materials & sanitary ware',
       p3Title: 'Trusted Partnerships',
@@ -54,16 +54,16 @@ const I18N = {
       eyebrow: 'ABOUT GUARTE',
       titleLine1: 'More Than Trade',
       titleAccent: 'A Stronger Tomorrow',
-      p1: 'Headquartered in Thermi, Thessaloniki, Greece, GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (I.K.E.) operates at the strategic maritime crossroads of Europe, the Mediterranean, the Black Sea, and the Middle East.',
-      p2: 'We combine deep regional expertise in international sea transport with specialized wholesale trading in industrial wood products, structural construction materials, and architectural sanitary equipment—creating enduring value between producers and global markets.',
+      p1: 'Headquartered in Thermi, Thessaloniki, Greece, GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (I.K.E.) operates at the strategic crossroads of Europe, the Mediterranean, the Black Sea, and the Middle East.',
+      p2: 'We combine deep regional expertise in international trade and cross-border logistics with specialized wholesale supply in industrial wood products, structural construction materials, and architectural sanitary equipment—creating enduring value between producers and global markets.',
       legalBadgeTitle: 'CORPORATE STRUCTURE & SECTOR CLASSIFICATION',
-      legalBadgeText: 'GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (Monoprosopi I.K.E.) • NACE 46.73 / 46.83 Wholesale of Wood, Construction Materials & Sanitary Equipment • International Maritime Trade',
+      legalBadgeText: 'GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (Monoprosopi I.K.E.) • NACE 46.73 / 46.83 Wholesale of Wood, Construction Materials & Sanitary Equipment • International Trade',
       btnStory: 'Explore Trade Divisions',
       btnContact: 'Partner With Us',
       mapMotto: 'A MORE CONNECTED TOMORROW',
       mapHqLabel: 'THESSALONIKI, GREECE (HQ)',
       corridors: [
-        'Aegean & Mediterranean Sea Lanes',
+        'Aegean & Mediterranean Markets',
         'Türkiye & Black Sea Corridor',
         'Central & Western Europe',
         'Middle East & North Africa'
@@ -72,16 +72,16 @@ const I18N = {
       valuesKicker: 'LOCAL ROOTS • GLOBAL HORIZONS',
       valuesHeading: 'Built on Principle, Driven by Precision',
       v1Name: 'Uncompromising Trust',
-      v1Text: 'Structured under Greek & EU corporate law (I.K.E.), ensuring full contractual compliance and transparency across every shipment.',
+      v1Text: 'Structured under Greek & EU corporate law (I.K.E.), ensuring full contractual compliance and transparency across every delivery.',
       v2Name: 'Verified Material Quality',
-      v2Text: 'Direct factory-to-port quality assurance across MDF, plywood, structural building supplies, and sanitary installations.',
-      v3Name: 'Integrated Sea Logistics',
-      v3Text: 'End-to-end coordination of container freight, bulk vessel chartering, customs clearance, and regional distribution.'
+      v2Text: 'Direct factory-to-market quality assurance across MDF, plywood, structural building supplies, and sanitary installations.',
+      v3Name: 'Integrated Supply & Logistics',
+      v3Text: 'End-to-end coordination of international freight, customs clearance, warehousing, and regional distribution.'
     },
     services: {
       eyebrow: 'OUR SERVICES',
-      title: 'Integrated Maritime & Trade Solutions',
-      taglineRight: 'End-to-end shipping and wholesale trade solutions, tailored to your needs.',
+      title: 'Integrated Global Trade Solutions',
+      taglineRight: 'End-to-end international trade and wholesale supply solutions, tailored to your needs.',
       learnMore: 'Service Specifications',
       cards: [
         {
@@ -98,26 +98,26 @@ const I18N = {
           ]
         },
         {
-          id: 'maritime',
-          title: 'Maritime Import & Export',
-          short: 'Efficient sea freight, vessel chartering, and reliable cross-border trade flows.',
-          modalSubtitle: 'International Container Shipping, Bulk Chartering & Customs Execution',
-          modalDesc: 'Leveraging strategic ports in Thessaloniki, the Aegean, and the Straits corridor, we orchestrate seamless sea transportation and cross-border documentation for complex cargo movements.',
+          id: 'import-export',
+          title: 'Import & Export',
+          short: 'Efficient international logistics and reliable cross-border trade flows.',
+          modalSubtitle: 'International Freight Coordination & Cross-Border Customs Execution',
+          modalDesc: 'Leveraging strategic hubs in Thessaloniki, the Aegean, and the Straits corridor, we orchestrate seamless international transportation and cross-border documentation for complex cargo movements.',
           bullets: [
-            'Full Container Load (FCL) and Dry Bulk maritime freight coordination',
-            'Port-to-port scheduling across Mediterranean, Black Sea, and European ports',
+            'Full Container Load (FCL) and bulk commercial freight coordination',
+            'Scheduled routing across Mediterranean, Black Sea, and European trade hubs',
             'EU and international customs documentation, certificates of origin, and Incoterms management',
-            'Real-time vessel routing oversight and marine cargo risk mitigation'
+            'Real-time shipment oversight and cargo risk mitigation'
           ]
         },
         {
           id: 'distribution',
           title: 'Supply & Distribution',
-          short: 'Connecting manufacturers and regional markets through synchronized port-to-site logistics.',
+          short: 'Connecting suppliers and regional markets through synchronized supply chain execution.',
           modalSubtitle: 'Multimodal Logistics, Warehousing & Regional Supply Continuity',
-          modalDesc: 'Our supply chain infrastructure bridges maritime terminals with inland distribution centers, ensuring uninterrupted inventory flow for large-scale construction and industrial partners.',
+          modalDesc: 'Our supply chain infrastructure bridges production hubs with regional distribution centers, ensuring uninterrupted inventory flow for large-scale construction and industrial partners.',
           bullets: [
-            'Synchronized port-to-warehouse intermodal transport across Southeastern & Central Europe',
+            'Synchronized intermodal transport across Southeastern & Central Europe',
             'Palletized timber, panel, and sanitary equipment storage & consolidation',
             'Scheduled just-in-time deliveries for commercial developers and wholesale distributors',
             'Complete batch traceability from production floor to final destination'
@@ -126,12 +126,12 @@ const I18N = {
         {
           id: 'consultancy',
           title: 'Trade Consultancy',
-          short: 'Your strategic solution partner in international maritime commerce and market entry.',
+          short: 'Your strategic solution partner in international trade and market entry.',
           modalSubtitle: 'Cross-Border Commercial Advisory & Supply Chain Structuring',
-          modalDesc: 'We advise manufacturers, contractors, and institutional buyers on navigating regulatory frameworks, optimizing freight routes, and structuring resilient bilateral trade partnerships.',
+          modalDesc: 'We advise manufacturers, contractors, and institutional buyers on navigating regulatory frameworks, optimizing trade routes, and structuring resilient bilateral partnerships.',
           bullets: [
             'Market intelligence and supplier qualification across Greece, Türkiye, and the EU',
-            'Freight cost optimization and multimodal corridor selection',
+            'Logistics cost optimization and multimodal corridor selection',
             'Regulatory compliance under EU construction and timber trade standards',
             'Long-term bilateral supply agreement structuring and risk management'
           ]
@@ -141,7 +141,7 @@ const I18N = {
     divisions: {
       eyebrow: 'CORE TRADE DIVISIONS',
       title: 'Specialized Wholesale Portfolio',
-      subtitle: 'Aligned with our official commercial registration (NACE 46.73 / 46.83) and maritime logistics capabilities, we focus on three core industrial pillars.',
+      subtitle: 'Aligned with our official commercial registration (NACE 46.73 / 46.83) and international supply chain capabilities, we focus on three core industrial pillars.',
       d1Badge: 'DIVISION 01 • TIMBER & PANELS',
       d1Title: 'Wood & Engineered Panels',
       d1Desc: 'High-density engineered wood products and structural timber sourced from certified mills for furniture manufacturing, interior architecture, and construction.',
@@ -163,7 +163,7 @@ const I18N = {
     contact: {
       eyebrow: 'GET IN TOUCH',
       title: 'Corporate Headquarters & Inquiries',
-      subtitle: 'Connect with our Thessaloniki headquarters for maritime freight inquiries, wholesale commodity specifications, or long-term partnership opportunities.',
+      subtitle: 'Connect with our Thessaloniki headquarters for international trade inquiries, wholesale commodity specifications, or long-term partnership opportunities.',
       hqTitle: 'Registered Corporate Office',
       hqEntity: 'GUARTE HELLAS SOLE SHAREHOLDER CO. P.C.',
       addressLabel: 'REGISTERED ADDRESS',
@@ -178,14 +178,14 @@ const I18N = {
       formEmailPlaceholder: 'name@company.com',
       formDivision: 'Inquiry Department',
       formOptions: [
-        'Maritime Shipping & Freight Solutions',
+        'Import, Export & International Logistics',
         'Wood Products (MDF, Plywood, PB, Laminate)',
         'Construction Materials Wholesale',
         'Sanitary Equipment & Bathroom Ware',
         'Strategic Partnership & Trade Consultancy'
       ],
       formMessage: 'Project or Shipment Details',
-      formMessagePlaceholder: 'Please specify commodity requirements, target ports, or partnership scope...',
+      formMessagePlaceholder: 'Please specify commodity requirements, target markets, or partnership scope...',
       formSubmit: 'Send Official Inquiry',
       formSuccess: 'Thank you. Your inquiry has been prepared for info@guarteglobal.com. Opening your mail client or recording your request.'
     },
@@ -210,7 +210,7 @@ const I18N = {
           <li><strong>Legal Name:</strong> GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (Μονοπρόσωπη Ι.Κ.Ε.)</li>
           <li><strong>Legal Form:</strong> Sole Shareholder Private Company (Monoprosopi Idiotiki Kefalaiouchiki Etaireia) registered in the Hellenic Republic</li>
           <li><strong>Registered Seat:</strong> Straitsa 2, Postal Code 57001, Thermi, Thessaloniki, Greece</li>
-          <li><strong>Primary Activity Classification (NACE):</strong> 46.73 / 46.83 — Wholesale of wood, construction materials, and sanitary equipment; International Maritime & Commercial Trade</li>
+          <li><strong>Primary Activity Classification (NACE):</strong> 46.73 / 46.83 — Wholesale of wood, construction materials, and sanitary equipment; International Commercial Trade</li>
           <li><strong>Official Contact:</strong> info@guarteglobal.com</li>
         </ul>
       `,
@@ -219,7 +219,7 @@ const I18N = {
         <p><strong>GUARTE HELLAS SOLE SHAREHOLDER CO. P.C.</strong> respects your privacy and processes personal and corporate inquiry data strictly in compliance with Regulation (EU) 2016/679 (General Data Protection Regulation - GDPR) and applicable Greek law.</p>
         <ul>
           <li><strong>Data Controller:</strong> GUARTE HELLAS SOLE SHAREHOLDER CO. P.C., Straitsa 2, 57001 Thermi, Thessaloniki, Greece (info@guarteglobal.com).</li>
-          <li><strong>Purpose of Processing:</strong> Information submitted through our contact channels is used exclusively to respond to commercial inquiries, prepare maritime or wholesale quotations, and fulfill contractual obligations.</li>
+          <li><strong>Purpose of Processing:</strong> Information submitted through our contact channels is used exclusively to respond to commercial inquiries, prepare wholesale quotations, and fulfill contractual obligations.</li>
           <li><strong>Data Retention & Security:</strong> We do not sell or lease corporate contact data to third parties. Data is retained only for the duration necessary for commercial correspondence and statutory compliance.</li>
         </ul>
       `,
@@ -227,7 +227,7 @@ const I18N = {
       termsBody: `
         <p>Welcome to <strong>www.guarteglobal.com</strong>, the official corporate website of <strong>GUARTE HELLAS SOLE SHAREHOLDER CO. P.C.</strong></p>
         <ul>
-          <li><strong>Informational Scope:</strong> All content, product descriptions, and maritime route illustrations on this portal are provided for general corporate information and do not constitute a binding freight or commodity offer until confirmed by written contract.</li>
+          <li><strong>Informational Scope:</strong> All content, product descriptions, and trade route illustrations on this portal are provided for general corporate information and do not constitute a binding commercial offer until confirmed by written contract.</li>
           <li><strong>Intellectual Property:</strong> The Guarte Global emblem, visual assets, and corporate text are the exclusive property of GUARTE HELLAS SOLE SHAREHOLDER CO. P.C.</li>
           <li><strong>Governing Law:</strong> Any legal matter arising from the use of this website is governed by the laws of the Hellenic Republic and the courts of Thessaloniki, Greece.</li>
         </ul>
@@ -236,7 +236,7 @@ const I18N = {
   },
 
   gr: {
-    metaTitle: 'GUARTE GLOBAL | Διεθνείς Ναυτιλιακές Μεταφορές & Χονδρικό Εμπόριο',
+    metaTitle: 'GUARTE GLOBAL | Διεθνές Εμπόριο & Λύσεις Χονδρικής',
     brandSub: 'GLOBAL TRADE',
     nav: {
       home: 'Αρχική',
@@ -253,15 +253,15 @@ const I18N = {
           kicker: 'ΓΕΦΥΡΩΝΟΝΤΑΣ ΑΓΟΡΕΣ • ΧΤΙΖΟΝΤΑΣ ΣΥΝΕΡΓΑΣΙΕΣ',
           titleLine1: 'Συνδέουμε Ευκαιρίες',
           titleAccent: 'Πέρα από Σύνορα',
-          desc: 'Η Guarte Hellas I.K.E. είναι ο αξιόπιστος συνεργάτης σας στις διεθνείς θαλάσσιες μεταφορές και το χονδρικό εμπόριο ξυλείας, οικοδομικών υλικών και ειδών υγιεινής, δημιουργώντας διαρκή αξία στις διεθνείς αγορές.',
+          desc: 'Η Guarte Hellas I.K.E. είναι ο αξιόπιστος συνεργάτης σας στο διεθνές εμπόριο και την προμήθεια ξυλείας, οικοδομικών υλικών και ειδών υγιεινής, δημιουργώντας διαρκή αξία στις διεθνείς αγορές.',
           coords: 'ΘΕΣΣΑΛΟΝΙΚΗ • ΔΙΩΡΥΓΑ ΚΟΡΙΝΘΟΥ  |  37.9347° N, 22.9839° E'
         },
         {
-          kicker: 'ΔΙΕΘΝΕΙΣ ΝΑΥΤΙΛΙΑΚΕΣ & ΕΜΠΟΡΙΚΕΣ ΛΥΣΕΙΣ',
-          titleLine1: 'Από Στρατηγικά Στενά',
-          titleAccent: 'Σε Διεθνή Λιμάνια',
-          desc: 'Στο σταυροδρόμι του Αιγαίου, της Μεσογείου και του Ευξείνου Πόντου, συνδέουμε κορυφαίους παραγωγούς με διεθνείς αγοραστές μέσω αξιόπιστων θαλάσσιων μεταφορών και ολοκληρωμένης εφοδιαστικής αλυσίδας.',
-          coords: 'ΘΑΛΑΣΣΙΟΣ ΔΙΑΔΡΟΜΟΣ ΣΤΕΝΩΝ  |  41.0082° N, 28.9784° E'
+          kicker: 'ΔΙΕΘΝΕΙΣ ΕΜΠΟΡΙΚΕΣ & ΕΦΟΔΙΑΣΤΙΚΕΣ ΛΥΣΕΙΣ',
+          titleLine1: 'Από Στρατηγικούς Κόμβους',
+          titleAccent: 'Στις Διεθνείς Αγορές',
+          desc: 'Στο σταυροδρόμι της Ευρώπης, της Μεσογείου και του Ευξείνου Πόντου, συνδέουμε κορυφαίους παραγωγούς με διεθνείς αγοραστές μέσω αξιόπιστων μεταφορών και ολοκληρωμένης εφοδιαστικής αλυσίδας.',
+          coords: 'ΕΜΠΟΡΙΚΟΣ ΔΙΑΔΡΟΜΟΣ ΣΤΕΝΩΝ  |  41.0082° N, 28.9784° E'
         }
       ],
       btnServices: 'Οι Υπηρεσίες μας',
@@ -269,11 +269,11 @@ const I18N = {
       asideList: ['ΑΝΘΡΩΠΟΙ', 'ΠΡΟΪΟΝΤΑ', 'ΑΓΟΡΕΣ', 'ΕΥΚΑΙΡΙΕΣ'],
       asideMotto: 'ΑΠΟ ΤΗΝ ΕΛΛΑΔΑ ΣΕ ΕΝΑ ΠΙΟ ΣΥΝΔΕΔΕΜΕΝΟ ΑΥΡΙΟ',
       tab1: 'Διάδρομος Κορίνθου & Αιγαίου',
-      tab2: 'Διάδρομος Στενών & Παγκόσμια Λιμάνια'
+      tab2: 'Διάδρομος Στενών & Παγκόσμιες Αγορές'
     },
     pillars: {
-      p1Title: 'Παγκόσμια Ναυτιλιακή Εμβέλεια',
-      p1Desc: 'Απευθείας θαλάσσιες μεταφορές σε κομβικά διεθνή λιμάνια',
+      p1Title: 'Παγκόσμια Εμβέλεια',
+      p1Desc: 'Απευθείας πρόσβαση σε διεθνείς αγορές και εμπορικούς διαδρόμους',
       p2Title: 'Πιστοποιημένο Χαρτοφυλάκιο',
       p2Desc: 'Ξυλεία, οικοδομικά υλικά & εξοπλισμός ειδών υγιεινής',
       p3Title: 'Αξιόπιστες Συνεργασίες',
@@ -286,15 +286,15 @@ const I18N = {
       titleLine1: 'Περισσότερο από Εμπόριο',
       titleAccent: 'Ένα Ισχυρότερο Αύριο',
       p1: 'Με έδρα στη Θέρμη Θεσσαλονίκης, η GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (Μονοπρόσωπη Ι.Κ.Ε.) δραστηριοποιείται στο στρατηγικό σταυροδρόμι της Ευρώπης, της Μεσογείου, της Μαύρης Θάλασσας και της Μέσης Ανατολής.',
-      p2: 'Συνδυάζουμε την τεχνογνωσία στις διεθνείς θαλάσσιες μεταφορές με το εξειδικευμένο χονδρικό εμπόριο βιομηχανικής ξυλείας, οικοδομικών υλικών και ειδών υγιεινής, προσφέροντας ολοκληρωμένες λύσεις πέρα από σύνορα.',
+      p2: 'Συνδυάζουμε την τεχνογνωσία στο διεθνές εμπόριο και τα διασυνοριακά logistics με το εξειδικευμένο χονδρικό εμπόριο βιομηχανικής ξυλείας, οικοδομικών υλικών και ειδών υγιεινής, προσφέροντας ολοκληρωμένες λύσεις πέρα από σύνορα.',
       legalBadgeTitle: 'ΕΤΑΙΡΙΚΗ ΤΑΥΤΟΤΗΤΑ & ΚΩΔΙΚΟΣ ΔΡΑΣΤΗΡΙΟΤΗΤΑΣ (ΚΑΔ / NACE)',
-      legalBadgeText: 'GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (Μονοπρόσωπη Ι.Κ.Ε.) • ΚΑΔ / NACE 46.73 / 46.83 Χονδρικό Εμπόριο Ξυλείας, Οικοδομικών Υλικών & Ειδών Υγιεινής • Διεθνές Ναυτιλιακό Εμπόριο',
+      legalBadgeText: 'GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (Μονοπρόσωπη Ι.Κ.Ε.) • ΚΑΔ / NACE 46.73 / 46.83 Χονδρικό Εμπόριο Ξυλείας, Οικοδομικών Υλικών & Ειδών Υγιεινής • Διεθνές Εμπόριο',
       btnStory: 'Τομείς Εμπορίου',
       btnContact: 'Επικοινωνία',
       mapMotto: 'ΕΝΑ ΠΙΟ ΣΥΝΔΕΔΕΜΕΝΟ ΑΥΡΙΟ',
       mapHqLabel: 'ΘΕΣΣΑΛΟΝΙΚΗ, ΕΛΛΑΔΑ (ΕΔΡΑ)',
       corridors: [
-        'Θαλάσσιοι Δρόμοι Αιγαίου & Μεσογείου',
+        'Αγορές Αιγαίου & Μεσογείου',
         'Διάδρομος Τουρκίας & Μαύρης Θάλασσας',
         'Κεντρική & Δυτική Ευρώπη',
         'Μέση Ανατολή & Βόρεια Αφρική'
@@ -305,14 +305,14 @@ const I18N = {
       v1Name: 'Αδιαπραγμάτευτη Εμπιστοσύνη',
       v1Text: 'Λειτουργία υπό το ελληνικό και ευρωπαϊκό εταιρικό δίκαιο (Ι.Κ.Ε.), διασφαλίζοντας πλήρη συμβατική διαφάνεια σε κάθε αποστολή.',
       v2Name: 'Πιστοποιημένη Ποιότητα Υλικών',
-      v2Text: 'Αυστηρός ποιοτικός έλεγχος από το εργοστάσιο έως το λιμάνι σε MDF, κόντρα πλακέ, δομικά υλικά και είδη υγιεινής.',
-      v3Name: 'Ολοκληρωμένη Ναυτιλιακή Εφοδιαστική',
-      v3Text: 'Συντονισμός μεταφορών εμπορευματοκιβωτίων, ναυλώσεων πλοίων, εκτελωνισμών και περιφερειακής διανομής.'
+      v2Text: 'Αυστηρός ποιοτικός έλεγχος από το εργοστάσιο έως την παράδοση σε MDF, κόντρα πλακέ, δομικά υλικά και είδη υγιεινής.',
+      v3Name: 'Ολοκληρωμένη Εφοδιαστική Αλυσίδα',
+      v3Text: 'Συντονισμός διεθνών μεταφορών, εκτελωνισμών, αποθήκευσης και περιφερειακής διανομής.'
     },
     services: {
       eyebrow: 'ΟΙ ΥΠΗΡΕΣΙΕΣ ΜΑΣ',
-      title: 'Ολοκληρωμένες Ναυτιλιακές & Εμπορικές Λύσεις',
-      taglineRight: 'Λύσεις διεθνούς εμπορίου και μεταφορών από άκρη σε άκρη, προσαρμοσμένες στις ανάγκες σας.',
+      title: 'Ολοκληρωμένες Λύσεις Διεθνούς Εμπορίου',
+      taglineRight: 'Λύσεις διεθνούς εμπορίου και προμήθειας από άκρη σε άκρη, προσαρμοσμένες στις ανάγκες σας.',
       learnMore: 'Προδιαγραφές Υπηρεσίας',
       cards: [
         {
@@ -329,16 +329,16 @@ const I18N = {
           ]
         },
         {
-          id: 'maritime',
-          title: 'Ναυτιλία, Εισαγωγές & Εξαγωγές',
-          short: 'Αποτελεσματικές θαλάσσιες μεταφορές, ναυλώσεις και αξιόπιστες διασυνοριακές ροές εμπορίου.',
-          modalSubtitle: 'Διεθνείς Μεταφορές Εμπορευματοκιβωτίων, Ναυλώσεις & Τελωνειακές Διαδικασίες',
-          modalDesc: 'Αξιοποιώντας στρατηγικά λιμάνια στη Θεσσαλονίκη, το Αιγαίο και τα Στενά, οργανώνουμε ασφαλείς θαλάσσιες μεταφορές και πλήρη διασυνοριακή τεκμηρίωση.',
+          id: 'import-export',
+          title: 'Εισαγωγές & Εξαγωγές',
+          short: 'Αποτελεσματικές διεθνείς μεταφορές και αξιόπιστες διασυνοριακές ροές εμπορίου.',
+          modalSubtitle: 'Διεθνείς Μεταφορές Εμπορευματοκιβωτίων & Τελωνειακές Διαδικασίες',
+          modalDesc: 'Αξιοποιώντας στρατηγικούς κόμβους στη Θεσσαλονίκη, το Αιγαίο και τα Στενά, οργανώνουμε ασφαλείς διεθνείς μεταφορές και πλήρη διασυνοριακή τεκμηρίωση.',
           bullets: [
-            'Συντονισμός θαλάσσιων μεταφορών FCL (Full Container Load) και χύδην φορτίου',
-            'Δρομολόγηση από λιμάνι σε λιμάνι σε Μεσόγειο, Μαύρη Θάλασσα και Ευρώπη',
+            'Συντονισμός διεθνών μεταφορών FCL (Full Container Load) και εμπορικών φορτίων',
+            'Δρομολόγηση σε εμπορικούς κόμβους Μεσογείου, Μαύρης Θάλασσας και Ευρώπης',
             'Διαχείριση τελωνειακών εγγράφων ΕΕ, πιστοποιητικών καταγωγής και όρων Incoterms',
-            'Παρακολούθηση δρομολογίων πλοίων και διαχείριση ασφάλισης φορτίου'
+            'Παρακολούθηση αποστολών και διαχείριση ασφάλισης φορτίου'
           ]
         },
         {
@@ -346,9 +346,9 @@ const I18N = {
           title: 'Εφοδιασμός & Διανομή',
           short: 'Σύνδεση προμηθευτών και αγορών μέσω συγχρονισμένης εφοδιαστικής αλυσίδας.',
           modalSubtitle: 'Συνδυασμένες Μεταφορές, Αποθήκευση & Περιφερειακή Διανομή',
-          modalDesc: 'Η υποδομή μας συνδέει τους λιμενικούς τερματικούς σταθμούς με κέντρα διανομής, εξασφαλίζοντας αδιάλειπτη ροή αποθεμάτων για κατασκευαστικούς και εμπορικούς ομίλους.',
+          modalDesc: 'Η υποδομή μας συνδέει τους κόμβους παραγωγής με κέντρα διανομής, εξασφαλίζοντας αδιάλειπτη ροή αποθεμάτων για κατασκευαστικούς και εμπορικούς ομίλους.',
           bullets: [
-            'Συνδυασμένη μεταφορά από το λιμάνι στην αποθήκη σε Νοτιοανατολική και Κεντρική Ευρώπη',
+            'Συνδυασμένη μεταφορά και διανομή σε Νοτιοανατολική και Κεντρική Ευρώπη',
             'Αποθήκευση και ομαδοποίηση παλετοποιημένης ξυλείας, πάνελ και ειδών υγιεινής',
             'Προγραμματισμένες παραδόσεις Just-in-Time για εμπόρους χονδρικής και τεχνικές εταιρείες',
             'Πλήρης ιχνηλασιμότητα παρτίδων από την παραγωγή έως τον τελικό προορισμό'
@@ -357,12 +357,12 @@ const I18N = {
         {
           id: 'consultancy',
           title: 'Εμπορική Συμβουλευτική',
-          short: 'Ο στρατηγικός σας συνεργάτης στο διεθνές ναυτιλιακό και διασυνοριακό εμπόριο.',
+          short: 'Ο στρατηγικός σας συνεργάτης στο διεθνές και διασυνοριακό εμπόριο.',
           modalSubtitle: 'Στρατηγική Ανάπτυξη Αγορών & Δομή Εφοδιαστικής Αλυσίδας',
-          modalDesc: 'Υποστηρίζουμε βιομηχανίες, τεχνικές εταιρείες και διεθνείς αγοραστές στη βελτιστοποίηση ναύλων, τη κανονιστική συμμόρφωση και τη σύναψη μακροχρόνιων εμπορικών συμφωνιών.',
+          modalDesc: 'Υποστηρίζουμε βιομηχανίες, τεχνικές εταιρείες και διεθνείς αγοραστές στη βελτιστοποίηση μεταφορών, την κανονιστική συμμόρφωση και τη σύναψη μακροχρόνιων εμπορικών συμφωνιών.',
           bullets: [
             'Ανάλυση αγοράς και αξιολόγηση προμηθευτών σε Ελλάδα, Τουρκία και Ευρωπαϊκή Ένωση',
-            'Βελτιστοποίηση κόστους ναύλων και επιλογή βέλτιστων εμπορικών διαδρόμων',
+            'Βελτιστοποίηση κόστους μεταφορών και επιλογή βέλτιστων εμπορικών διαδρόμων',
             'Κανονιστική συμμόρφωση με τα ευρωπαϊκά πρότυπα δομικών υλικών και ξυλείας',
             'Διαμόρφωση μακροχρόνιων διμερών συμβάσεων προμήθειας'
           ]
@@ -372,7 +372,7 @@ const I18N = {
     divisions: {
       eyebrow: 'ΚΥΡΙΟΙ ΤΟΜΕΙΣ ΕΜΠΟΡΙΟΥ',
       title: 'Εξειδικευμένο Χαρτοφυλάκιο Χονδρικής',
-      subtitle: 'Σύμφωνα με την επίσημη εμπορική μας δραστηριότητα (ΚΑΔ / NACE 46.73 & 46.83) και τις ναυτιλιακές μας υποδομές, εστιάζουμε σε τρεις βασικούς πυλώνες.',
+      subtitle: 'Σύμφωνα με την επίσημη εμπορική μας δραστηριότητα (ΚΑΔ / NACE 46.73 & 46.83) και τις διεθνείς εφοδιαστικές μας υποδομές, εστιάζουμε σε τρεις βασικούς πυλώνες.',
       d1Badge: 'ΤΟΜΕΑΣ 01 • ΞΥΛΕΙΑ & ΠΑΝΕΛ',
       d1Title: 'Προϊόντα Ξύλου & Πάνελ',
       d1Desc: 'Βιομηχανικά προϊόντα ξύλου υψηλής πυκνότητας και δομική ξυλεία από πιστοποιημένα εργοστάσια για επιπλοποιία, αρχιτεκτονική εσωτερικών χώρων και κατασκευές.',
@@ -394,7 +394,7 @@ const I18N = {
     contact: {
       eyebrow: 'ΕΠΙΚΟΙΝΩΝΙΑ',
       title: 'Εταιρική Έδρα & Εμπορικά Αιτήματα',
-      subtitle: 'Επικοινωνήστε με την έδρα μας στη Θεσσαλονίκη για αιτήματα θαλάσσιων μεταφορών, προδιαγραφές χονδρικής ή νέες εμπορικές συνεργασίες.',
+      subtitle: 'Επικοινωνήστε με την έδρα μας στη Θεσσαλονίκη για αιτήματα διεθνούς εμπορίου, προδιαγραφές χονδρικής ή νέες εμπορικές συνεργασίες.',
       hqTitle: 'Καταχωρημένη Εταιρική Έδρα',
       hqEntity: 'GUARTE HELLAS SOLE SHAREHOLDER CO. P.C.',
       addressLabel: 'ΔΙΕΥΘΥΝΣΗ ΕΔΡΑΣ',
@@ -409,14 +409,14 @@ const I18N = {
       formEmailPlaceholder: 'name@company.com',
       formDivision: 'Τμήμα Ενδιαφέροντος',
       formOptions: [
-        'Ναυτιλιακές Μεταφορές & Ναυλώσεις',
+        'Εισαγωγές, Εξαγωγές & Διεθνή Logistics',
         'Προϊόντα Ξύλου (MDF, Κόντρα Πλακέ, PB, Laminate)',
         'Χονδρικό Εμπόριο Οικοδομικών Υλικών',
         'Είδη Υγιεινής & Υδραυλικός Εξοπλισμός',
         'Στρατηγική Συνεργασία & Εμπορική Συμβουλευτική'
       ],
-      formMessage: 'Λεπτομέρειες Έργου ή Φορτίου',
-      formMessagePlaceholder: 'Παρακαλούμε αναφέρετε τις απαιτήσεις προϊόντων, τα λιμάνια προορισμού ή το αντικείμενο συνεργασίας...',
+      formMessage: 'Λεπτομέρειες Έργου ή Παραγγελίας',
+      formMessagePlaceholder: 'Παρακαλούμε αναφέρετε τις απαιτήσεις προϊόντων, τις αγορές προορισμού ή το αντικείμενο συνεργασίας...',
       formSubmit: 'Αποστολή Επίσημου Αιτήματος',
       formSuccess: 'Σας ευχαριστούμε. Το αίτημά σας ετοιμάστηκε για αποστολή στο info@guarteglobal.com.'
     },
@@ -441,7 +441,7 @@ const I18N = {
           <li><strong>Επωνυμία:</strong> GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (Μονοπρόσωπη Ι.Κ.Ε.)</li>
           <li><strong>Νομική Μορφή:</strong> Μονοπρόσωπη Ιδιωτική Κεφαλαιουχική Εταιρεία (Ι.Κ.Ε.)</li>
           <li><strong>Έδρα:</strong> Στραίτσα 2, Τ.Κ. 57001, Θέρμη, Θεσσαλονίκη, Ελλάδα</li>
-          <li><strong>Κύριος Κωδικός Δραστηριότητας (ΚΑΔ / NACE):</strong> 46.73 / 46.83 — Χονδρικό εμπόριο ξυλείας, οικοδομικών υλικών και ειδών υγιεινής • Διεθνές Ναυτιλιακό & Εμπορικό Δίκτυο</li>
+          <li><strong>Κύριος Κωδικός Δραστηριότητας (ΚΑΔ / NACE):</strong> 46.73 / 46.83 — Χονδρικό εμπόριο ξυλείας, οικοδομικών υλικών και ειδών υγιεινής • Διεθνές Εμπορικό Δίκτυο</li>
           <li><strong>Ηλεκτρονική Διεύθυνση:</strong> info@guarteglobal.com</li>
         </ul>
       `,
@@ -467,7 +467,7 @@ const I18N = {
   },
 
   tr: {
-    metaTitle: 'GUARTE GLOBAL | Uluslararası Deniz Nakliyatı ve Dış Ticaret Çözümleri',
+    metaTitle: 'GUARTE GLOBAL | Uluslararası Ticaret ve Tedarik Çözümleri',
     brandSub: 'GLOBAL TRADE',
     nav: {
       home: 'Ana Sayfa',
@@ -484,15 +484,15 @@ const I18N = {
           kicker: 'PAZARLARI BİRLEŞTİRİR • ORTAKLIKLAR İNŞA EDER',
           titleLine1: 'Sınırların Ötesinde',
           titleAccent: 'Fırsatları Buluşturuyoruz',
-          desc: 'Guarte Hellas I.K.E.; uluslararası gemi nakliyatı ile ahşap, inşaat malzemeleri ve sıhhi teçhizat toptan ticaretinde güvenilir çözüm ortağınızdır. Pazarlar arasında kalıcı değer ve güçlü tedarik zincirleri kuruyoruz.',
+          desc: 'Guarte Hellas I.K.E.; uluslararası ticaret ile ahşap, inşaat malzemeleri ve sıhhi teçhizat toptan tedarikinde güvenilir çözüm ortağınızdır. Pazarlar arasında kalıcı değer ve güçlü tedarik zincirleri kuruyoruz.',
           coords: 'SELANİK • KORİNT KORİDORU  |  37.9347° N, 22.9839° E'
         },
         {
-          kicker: 'KÜRESEL DENİZ TAŞIMACILIĞI & DIŞ TİCARET',
-          titleLine1: 'Stratejik Boğazlardan',
-          titleAccent: 'Dünya Limanlarına',
-          desc: 'Ege, Akdeniz ve Karadeniz ticaret koridorlarının kesişim noktasında; seçkin üreticileri kesintisiz deniz lojistiği ve kurumsal dış ticaret yönetimiyle küresel alıcılarla buluşturuyoruz.',
-          coords: 'BOĞAZLAR DENİZ KORİDORU  |  41.0082° N, 28.9784° E'
+          kicker: 'KÜRESEL TİCARET & TEDARİK ÇÖZÜMLERİ',
+          titleLine1: 'Stratejik Merkezlerden',
+          titleAccent: 'Dünya Pazarlarına',
+          desc: 'Avrupa, Akdeniz ve Karadeniz ticaret koridorlarının kesişim noktasında; seçkin üreticileri kesintisiz lojistik ve kurumsal dış ticaret yönetimiyle küresel alıcılarla buluşturuyoruz.',
+          coords: 'BOĞAZLAR TİCARET KORİDORU  |  41.0082° N, 28.9784° E'
         }
       ],
       btnServices: 'Hizmetlerimiz',
@@ -503,8 +503,8 @@ const I18N = {
       tab2: 'Boğazlar & Küresel Rota'
     },
     pillars: {
-      p1Title: 'Küresel Deniz Erişimi',
-      p1Desc: 'Stratejik limanlara doğrudan deniz nakliyatı ve navlun çözümleri',
+      p1Title: 'Küresel Erişim',
+      p1Desc: 'Uluslararası pazarlara ve stratejik ticaret koridorlarına doğrudan erişim',
       p2Title: 'Sertifikalı Ürün Portföyü',
       p2Desc: 'Ahşap ürünleri, inşaat malzemeleri ve sıhhi teçhizat ticareti',
       p3Title: 'Güvenilir İş Ortaklığı',
@@ -517,15 +517,15 @@ const I18N = {
       titleLine1: 'Ticaretten Fazlası',
       titleAccent: 'Daha Güçlü Bir Yarın',
       p1: 'Yunanistan’ın Selanik (Thermi) kentinde konumlanan GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (Monoprosopi I.K.E.); Avrupa, Akdeniz, Karadeniz ve Orta Doğu ticaret yollarının stratejik kavşağında faaliyet göstermektedir.',
-      p2: 'Uluslararası gemi taşımacılığı ve deniz lojistiğindeki uzmanlığımızı; endüstriyel ahşap ürünleri, yapı/inşaat malzemeleri ve sıhhi tesisat ekipmanları toptan ticaretiyle birleştirerek sınırların ötesinde ticari değer üretiyoruz.',
+      p2: 'Uluslararası dış ticaret ve sınır ötesi lojistik uzmanlığımızı; endüstriyel ahşap ürünleri, yapı/inşaat malzemeleri ve sıhhi tesisat ekipmanları toptan tedarikiyle birleştirerek sınırların ötesinde ticari değer üretiyoruz.',
       legalBadgeTitle: 'KURUMSAL STATÜ & FAALİYET KODU (NACE)',
-      legalBadgeText: 'GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (Monoprosopi I.K.E.) • NACE 46.73 / 46.83 Ahşap, İnşaat Malzemeleri ve Sıhhi Teçhizat Toptan Ticareti • Uluslararası Deniz Nakliyatı',
+      legalBadgeText: 'GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (Monoprosopi I.K.E.) • NACE 46.73 / 46.83 Ahşap, İnşaat Malzemeleri ve Sıhhi Teçhizat Toptan Ticareti • Uluslararası Ticaret',
       btnStory: 'Faaliyet Alanlarımız',
       btnContact: 'İletişime Geçin',
       mapMotto: 'DAHA BAĞLANTILI BİR YARIN',
       mapHqLabel: 'SELANİK, YUNANİSTAN (MERKEZ)',
       corridors: [
-        'Ege ve Akdeniz Deniz Rotaları',
+        'Ege ve Akdeniz Pazarları',
         'Türkiye ve Karadeniz Koridoru',
         'Orta ve Batı Avrupa Pazarı',
         'Orta Doğu ve Kuzey Afrika (MENA)'
@@ -536,14 +536,14 @@ const I18N = {
       v1Name: 'Sarsılmaz Kurumsal Güven',
       v1Text: 'Yunanistan ve AB ticaret hukuku (I.K.E.) çerçevesinde tam şeffaflık, sözleşme sadakati ve uluslararası mevzuat uyumu.',
       v2Name: 'Doğrulanmış Ürün Kalitesi',
-      v2Text: 'MDF, kontrplak, yapı malzemeleri ve sıhhi teçhizat kalemlerinde fabrikadan limana sıkı kalite kontrol süreçleri.',
-      v3Name: 'Entegre Deniz Lojistiği',
-      v3Text: 'Konteyner taşımacılığı, gemi kiralama (chartering), gümrükleme ve limandan depoya dağıtım süreçlerinde uçtan uca koordinasyon.'
+      v2Text: 'MDF, kontrplak, yapı malzemeleri ve sıhhi teçhizat kalemlerinde üretimden teslimata sıkı kalite kontrol süreçleri.',
+      v3Name: 'Entegre Tedarik ve Lojistik',
+      v3Text: 'Uluslararası taşımacılık, gümrükleme, depolama ve bölgesel dağıtım süreçlerinde uçtan uca koordinasyon.'
     },
     services: {
       eyebrow: 'HİZMETLERİMİZ',
-      title: 'Entegre Deniz Nakliyatı ve Dış Ticaret Çözümleri',
-      taglineRight: 'İhtiyaçlarınıza özel kurgulanan uçtan uca deniz taşımacılığı ve toptan ticaret çözümleri.',
+      title: 'Entegre Küresel Ticaret Çözümleri',
+      taglineRight: 'İhtiyaçlarınıza özel kurgulanan uçtan uca dış ticaret ve toptan tedarik çözümleri.',
       learnMore: 'Hizmet Detayları',
       cards: [
         {
@@ -560,26 +560,26 @@ const I18N = {
           ]
         },
         {
-          id: 'maritime',
-          title: 'Deniz Nakliyatı, İthalat & İhracat',
-          short: 'Verimli gemi taşımacılığı, navlun yönetimi ve güvenilir uluslararası ticaret akışı.',
-          modalSubtitle: 'Uluslararası Konteyner Taşımacılığı, Gemi Kiralama ve Gümrük Operasyonları',
-          modalDesc: 'Selanik, Ege ve Boğazlar koridorundaki stratejik liman ağımızla, yüksek hacimli yükler için güvenli deniz nakliyatı ve sınır ötesi dış ticaret operasyonlarını yönetiyoruz.',
+          id: 'import-export',
+          title: 'İthalat ve İhracat',
+          short: 'Verimli uluslararası lojistik yönetimi ve güvenilir sınır ötesi ticaret akışı.',
+          modalSubtitle: 'Uluslararası Taşımacılık Koordinasyonu ve Gümrük Operasyonları',
+          modalDesc: 'Selanik, Ege ve Boğazlar koridorundaki stratejik ticaret ağımızla, yüksek hacimli sevkiyatlar için güvenli uluslararası nakliye ve sınır ötesi dış ticaret operasyonlarını yönetiyoruz.',
           bullets: [
-            'Tam Konteyner Yükü (FCL) ve Kuru Yük (Dry Bulk) deniz nakliyat organizasyonu',
-            'Akdeniz, Karadeniz ve Avrupa limanları arasında düzenli gemi rotası planlaması',
+            'Tam Konteyner Yükü (FCL) ve yüksek hacimli ticari yük organizasyonu',
+            'Akdeniz, Karadeniz ve Avrupa ticaret merkezleri arasında düzenli sevkiyat planlaması',
             'AB ve uluslararası gümrük mevzuatı, menşe şahadetnameleri ve Incoterms yönetimi',
-            'Gerçek zamanlı gemi rota takibi ve deniz nakliyat sigortası/risk yönetimi'
+            'Gerçek zamanlı sevkiyat takibi ve ticari yük sigortası/risk yönetimi'
           ]
         },
         {
           id: 'distribution',
           title: 'Tedarik ve Dağıtım',
-          short: 'Üreticiler ile hedef pazarları limandan sahaya senkronize lojistik ağımızla bağlıyoruz.',
+          short: 'Üreticiler ile hedef pazarları senkronize tedarik ve dağıtım ağımızla bağlıyoruz.',
           modalSubtitle: 'Çok Modlu Lojistik, Depolama ve Bölgesel Tedarik Sürekliliği',
-          modalDesc: 'Tedarik zinciri altyapımız, deniz terminallerini iç bölgelerdeki dağıtım merkezleriyle birleştirerek büyük ölçekli inşaat projeleri ve toptan dağıtımcılar için kesintisiz stok akışı sağlar.',
+          modalDesc: 'Tedarik zinciri altyapımız, üretim merkezlerini bölgesel dağıtım noktalarıyla birleştirerek büyük ölçekli inşaat projeleri ve toptan dağıtımcılar için kesintisiz stok akışı sağlar.',
           bullets: [
-            'Güneydoğu ve Orta Avrupa genelinde limandan depoya entegre intermodal taşımacılık',
+            'Güneydoğu ve Orta Avrupa genelinde entegre intermodal taşımacılık ve dağıtım',
             'Paletli kereste, ahşap panel ve sıhhi teçhizat ürünlerinde güvenli depolama ve konsolidasyon',
             'İnşaat projeleri ve toptan satış noktaları için zamanında (Just-in-Time) teslimat planlaması',
             'Üretim bandından nihai teslimat noktasına kadar tam parti izlenebilirliği'
@@ -588,12 +588,12 @@ const I18N = {
         {
           id: 'consultancy',
           title: 'Ticaret Danışmanlığı',
-          short: 'Uluslararası deniz ticareti, tedarik zinciri ve yeni pazarlara girişte stratejik çözüm ortağınız.',
+          short: 'Uluslararası ticaret, tedarik zinciri ve yeni pazarlara girişte stratejik çözüm ortağınız.',
           modalSubtitle: 'Sınır Ötesi Ticari Danışmanlık ve Tedarik Zinciri Yapılandırması',
-          modalDesc: 'Üreticilere, müteahhitlik firmalarına ve kurumsal alıcılara uluslararası mevzuat uyumu, navlun optimizasyonu ve uzun vadeli ikili ticaret anlaşmalarının kurgulanmasında rehberlik ediyoruz.',
+          modalDesc: 'Üreticilere, müteahhitlik firmalarına ve kurumsal alıcılara uluslararası mevzuat uyumu, lojistik optimizasyonu ve uzun vadeli ikili ticaret anlaşmalarının kurgulanmasında rehberlik ediyoruz.',
           bullets: [
             'Yunanistan, Türkiye ve Avrupa Birliği pazarlarında tedarikçi doğrulaması ve pazar analizi',
-            'Navlun maliyet optimizasyonu ve çok modlu taşıma koridoru seçimi',
+            'Lojistik maliyet optimizasyonu ve çok modlu taşıma koridoru seçimi',
             'AB yapı malzemeleri ve ahşap ticareti standartlarına teknik uyumluluk danışmanlığı',
             'Uzun vadeli tedarik sözleşmelerinin yapılandırılması ve ticari risk yönetimi'
           ]
@@ -603,7 +603,7 @@ const I18N = {
     divisions: {
       eyebrow: 'ANA FAALİYET ALANLARIMIZ',
       title: 'Uzmanlaşmış Toptan Ticaret Portföyü',
-      subtitle: 'Resmi ticaret sicil kaydımız (NACE 46.73 / 46.83) ve uluslararası deniz nakliyatı kabiliyetlerimiz doğrultusunda üç ana endüstriyel alanda faaliyet gösteriyoruz.',
+      subtitle: 'Resmi ticaret sicil kaydımız (NACE 46.73 / 46.83) ve uluslararası tedarik zinciri kabiliyetlerimiz doğrultusunda üç ana endüstriyel alanda faaliyet gösteriyoruz.',
       d1Badge: 'BÖLÜM 01 • AHŞAP & PANEL',
       d1Title: 'Ahşap ve Endüstriyel Levhalar',
       d1Desc: 'Mobilya endüstrisi, iç mimari ve yapı projeleri için sertifikalı tesislerden tedarik edilen yüksek yoğunluklu ahşap paneller ve yapısal kereste ürünleri.',
@@ -625,7 +625,7 @@ const I18N = {
     contact: {
       eyebrow: 'İLETİŞİM',
       title: 'Merkez Ofis ve Ticari Talepler',
-      subtitle: 'Deniz nakliyatı ve navlun talepleriniz, toptan ürün şartnameleri veya uzun vadeli iş ortaklığı fırsatları için Selanik merkez ofisimizle iletişime geçin.',
+      subtitle: 'Uluslararası ticaret talepleriniz, toptan ürün şartnameleri veya uzun vadeli iş ortaklığı fırsatları için Selanik merkez ofisimizle iletişime geçin.',
       hqTitle: 'Kayıtlı Merkez Ofisimiz',
       hqEntity: 'GUARTE HELLAS SOLE SHAREHOLDER CO. P.C.',
       addressLabel: 'AÇIK ADRES',
@@ -640,14 +640,14 @@ const I18N = {
       formEmailPlaceholder: 'isim@sirket.com',
       formDivision: 'İlgili Birim / Konu',
       formOptions: [
-        'Uluslararası Gemi Nakliyatı ve Navlun Çözümleri',
+        'İthalat, İhracat ve Uluslararası Lojistik',
         'Ahşap Ürünleri (MDF, Kontrplak, Sunta, Laminat)',
         'İnşaat ve Yapı Malzemeleri Toptan Ticareti',
         'Sıhhi Teçhizat ve Banyo Malzemeleri',
         'Stratejik İş Ortaklığı ve Ticaret Danışmanlığı'
       ],
       formMessage: 'Proje veya Sevkiyat Detayları',
-      formMessagePlaceholder: 'Lütfen talep ettiğiniz ürün grubunu, hedef limanları veya iş birliği kapsamını belirtiniz...',
+      formMessagePlaceholder: 'Lütfen talep ettiğiniz ürün grubunu, hedef pazarları veya iş birliği kapsamını belirtiniz...',
       formSubmit: 'Kurumsal Talep Gönder',
       formSuccess: 'Teşekkür ederiz. Talebiniz info@guarteglobal.com adresine iletilmek üzere hazırlandı.'
     },
@@ -672,7 +672,7 @@ const I18N = {
           <li><strong>Resmi Şirket Unvanı:</strong> GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. (Μονοπρόσωπη Ι.Κ.Ε.)</li>
           <li><strong>Hukuki Statüsü:</strong> Tek Ortaklı Özel Şirket (Monoprosopi I.K.E. / Sole Shareholder Private Company)</li>
           <li><strong>Kayıtlı Merkez Adresi:</strong> Straitsa 2, Posta Kodu: 57001, Thermi, Selanik / Yunanistan</li>
-          <li><strong>Ana Faaliyet Alanı (NACE Kodu):</strong> 46.73 / 46.83 — Ahşap, inşaat malzemeleri ve sıhhi teçhizat (sıhhi tesisat ve banyo malzemeleri) toptan ticareti; Uluslararası Deniz Taşımacılığı ve Dış Ticaret</li>
+          <li><strong>Ana Faaliyet Alanı (NACE Kodu):</strong> 46.73 / 46.83 — Ahşap, inşaat malzemeleri ve sıhhi teçhizat (sıhhi tesisat ve banyo malzemeleri) toptan ticareti; Uluslararası Dış Ticaret</li>
           <li><strong>Resmi İletişim:</strong> info@guarteglobal.com</li>
         </ul>
       `,
@@ -681,7 +681,7 @@ const I18N = {
         <p><strong>GUARTE HELLAS SOLE SHAREHOLDER CO. P.C.</strong>, kurumsal ve kişisel iletişim verilerinizi (AB) 2016/679 sayılı Genel Veri Koruma Tüzüğü (GDPR) ve Yunanistan mevzuatına tam uyumlu olarak işlemektedir.</p>
         <ul>
           <li><strong>Veri Sorumlusu:</strong> GUARTE HELLAS SOLE SHAREHOLDER CO. P.C., Straitsa 2, 57001 Thermi, Selanik / Yunanistan (info@guarteglobal.com).</li>
-          <li><strong>İşleme Amacı:</strong> İletişim kanallarımız üzerinden iletilen bilgiler yalnızca ticari taleplerinize yanıt vermek, navlun veya toptan ürün teklifi hazırlamak ve sözleşme süreçlerini yürütmek amacıyla kullanılır.</li>
+          <li><strong>İşleme Amacı:</strong> İletişim kanallarımız üzerinden iletilen bilgiler yalnızca ticari taleplerinize yanıt vermek, toptan ürün veya lojistik teklifi hazırlamak ve sözleşme süreçlerini yürütmek amacıyla kullanılır.</li>
           <li><strong>Veri Güvenliği:</strong> İletişim verileriniz üçüncü taraflara satılmaz veya devredilmez; yalnızca ticari yazışma ve yasal yükümlülük süresi boyunca güvenli şekilde muhafaza edilir.</li>
         </ul>
       `,
@@ -689,7 +689,7 @@ const I18N = {
       termsBody: `
         <p><strong>GUARTE HELLAS SOLE SHAREHOLDER CO. P.C.</strong> resmi web portalı <strong>www.guarteglobal.com</strong> adresine hoş geldiniz.</p>
         <ul>
-          <li><strong>Bilgilendirme Kapsamı:</strong> Sitede yer alan tüm ürün grupları, hizmet açıklamaları ve deniz rotası görselleri kurumsal bilgilendirme amaçlıdır; yazılı sözleşme ile teyit edilmedikçe bağlayıcı ticari teklif niteliği taşımaz.</li>
+          <li><strong>Bilgilendirme Kapsamı:</strong> Sitede yer alan tüm ürün grupları, hizmet açıklamaları ve ticaret rotası görselleri kurumsal bilgilendirme amaçlıdır; yazılı sözleşme ile teyit edilmedikçe bağlayıcı ticari teklif niteliği taşımaz.</li>
           <li><strong>Fikri Mülkiyet:</strong> Guarte Global logosu, görsel materyaller ve kurumsal metinler GUARTE HELLAS SOLE SHAREHOLDER CO. P.C. mülkiyetindedir.</li>
           <li><strong>Yetkili Hukuk:</strong> Bu web sitesinin kullanımından doğabilecek uyuşmazlıklarda Yunanistan Cumhuriyeti kanunları ve Selanik Mahkemeleri yetkilidir.</li>
         </ul>
@@ -843,12 +843,7 @@ function setLanguage(lang) {
     asideListEl.innerHTML = t.hero.asideList.map((w) => `<span>${w}</span>`).join('');
   }
 
-  // Render Map Corridor Pills & SVG Country Label
-  const svgGreeceLabel = document.getElementById('svgGreeceLabel');
-  if (svgGreeceLabel) {
-    svgGreeceLabel.textContent = lang === 'gr' ? 'ΕΛΛΑΔΑ' : lang === 'tr' ? 'YUNANİSTAN' : 'GREECE';
-  }
-
+  // Render Map Corridor Pills
   const corridorContainer = document.getElementById('mapCorridorPills');
   if (corridorContainer) {
     corridorContainer.innerHTML = t.about.corridors

@@ -1,6 +1,6 @@
 /* ==========================================================================
    GUARTE GLOBAL — www.guarteglobal.com
-   Luxury International Maritime & Wholesale Trade Corporate Stylesheet
+   Luxury International Trade & Wholesale Corporate Stylesheet
    ========================================================================== */
 
 :root {
@@ -59,6 +59,9 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -68,10 +71,13 @@ body {
   color: var(--slate-900);
   background-color: var(--cream-50);
   line-height: 1.65;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
-img {
+img, svg {
   max-width: 100%;
   height: auto;
   display: block;
@@ -105,21 +111,24 @@ ul {
 .eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 0.85rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.24em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold-600);
   margin-bottom: 1rem;
+  max-width: 100%;
 }
 
 .eyebrow::after {
   content: '';
   display: inline-block;
-  width: 44px;
+  width: 40px;
   height: 1px;
   background: var(--gold-500);
+  flex-shrink: 0;
 }
 
 .eyebrow.eyebrow-light {
@@ -132,11 +141,12 @@ ul {
 
 .section-title {
   font-family: var(--font-serif);
-  font-size: clamp(2.25rem, 3.6vw, 3.35rem);
+  font-size: clamp(2rem, 3.6vw, 3.35rem);
   font-weight: 600;
   line-height: 1.12;
   color: var(--navy-900);
   letter-spacing: -0.01em;
+  overflow-wrap: break-word;
 }
 
 .section-title em {
@@ -150,6 +160,7 @@ ul {
   color: var(--slate-700);
   max-width: 640px;
   line-height: 1.75;
+  overflow-wrap: break-word;
 }
 
 /* Buttons */
@@ -165,12 +176,14 @@ ul {
   text-transform: uppercase;
   border-radius: var(--radius-sm);
   transition: all 0.3s var(--ease-out);
-  white-space: nowrap;
+  max-width: 100%;
+  text-align: center;
 }
 
 .btn svg {
   width: 16px;
   height: 16px;
+  flex-shrink: 0;
   transition: transform 0.3s var(--ease-out);
 }
 
@@ -256,7 +269,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 /* Brand Logo */
@@ -265,6 +278,8 @@ ul {
   align-items: center;
   gap: 0.95rem;
   text-decoration: none;
+  min-width: 0;
+  flex-shrink: 0;
 }
 
 .brand-crest {
@@ -322,17 +337,18 @@ ul {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 2.1rem;
+  gap: 1.85rem;
 }
 
 .nav-link {
   position: relative;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--navy-900);
   padding: 0.4rem 0;
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -359,7 +375,8 @@ ul {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 1.15rem;
+  gap: 0.9rem;
+  flex-shrink: 0;
 }
 
 .lang-dropdown {
@@ -447,28 +464,30 @@ ul {
 
 .mobile-menu-btn {
   display: none;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   color: var(--navy-900);
+  flex-shrink: 0;
 }
 
 /* ==========================================================================
-   HERO SECTION (Dual Flagship Maritime Showcase)
+   HERO SECTION (Dual Flagship Showcase)
    ========================================================================== */
 
 .hero-section {
   position: relative;
   margin-top: var(--header-height);
-  min-height: 680px;
+  min-height: 660px;
   height: calc(92vh - var(--header-height));
   max-height: 860px;
   background-color: var(--navy-950);
   color: var(--white);
   overflow: hidden;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Background Slides */
@@ -516,28 +535,31 @@ ul {
   position: relative;
   z-index: 3;
   width: 100%;
-  height: 100%;
+  flex: 1;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 5.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
 }
 
 .hero-content {
   max-width: 650px;
+  min-width: 0;
 }
 
 .hero-kicker {
   display: inline-block;
   font-size: 0.76rem;
   font-weight: 600;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--gold-300);
-  line-height: 1.7;
+  line-height: 1.65;
   margin-bottom: 1rem;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .hero-divider {
@@ -549,13 +571,14 @@ ul {
 
 .hero-title {
   font-family: var(--font-serif);
-  font-size: clamp(2.85rem, 5.2vw, 4.65rem);
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
   font-weight: 600;
-  line-height: 1.04;
+  line-height: 1.06;
   letter-spacing: -0.01em;
   color: var(--white);
   margin-bottom: 1.35rem;
   text-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  overflow-wrap: break-word;
 }
 
 .hero-title em {
@@ -566,21 +589,22 @@ ul {
 }
 
 .hero-description {
-  font-size: 1.08rem;
+  font-size: 1.06rem;
   line-height: 1.72;
   color: rgba(255, 255, 255, 0.88);
   max-width: 540px;
-  margin-bottom: 2.2rem;
+  margin-bottom: 2rem;
+  overflow-wrap: break-word;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
+  gap: 0.9rem;
 }
 
-/* Right-side Vertical Editorial Callout (from Draft 2) */
+/* Right-side Vertical Editorial Callout */
 .hero-aside {
   display: flex;
   flex-direction: column;
@@ -620,13 +644,11 @@ ul {
 
 /* Hero Bottom Bar: Coordinates & Scene Switcher */
 .hero-bottom-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   z-index: 4;
   border-top: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(6, 16, 30, 0.52);
+  background: rgba(6, 16, 30, 0.56);
   backdrop-filter: blur(10px);
 }
 
@@ -634,8 +656,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 64px;
-  gap: 1.5rem;
+  min-height: 62px;
+  gap: 1.25rem;
+  flex-wrap: wrap;
 }
 
 .hero-coords {
@@ -644,9 +667,10 @@ ul {
   gap: 0.65rem;
   font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.78);
+  min-width: 0;
 }
 
 .coords-dot {
@@ -655,26 +679,29 @@ ul {
   border-radius: 50%;
   background: var(--gold-400);
   box-shadow: 0 0 0 4px rgba(214, 181, 116, 0.22);
+  flex-shrink: 0;
 }
 
 .hero-scene-tabs {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .scene-tab {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
-  padding: 0.55rem 1rem;
+  gap: 0.55rem;
+  padding: 0.55rem 0.9rem;
   font-size: 0.74rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.65);
   border-bottom: 2px solid transparent;
   transition: all 0.25s ease;
+  text-align: left;
 }
 
 .scene-tab:hover {
@@ -691,6 +718,7 @@ ul {
   font-size: 0.95rem;
   font-style: italic;
   color: var(--gold-400);
+  flex-shrink: 0;
 }
 
 /* ==========================================================================
@@ -707,16 +735,17 @@ ul {
 
 .pillars-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
 .pillar-item {
   display: flex;
   align-items: center;
-  gap: 1.1rem;
+  gap: 1rem;
   padding-right: 1.25rem;
   border-right: 1px solid var(--cream-300);
+  min-width: 0;
 }
 
 .pillar-item:last-child {
@@ -725,8 +754,8 @@ ul {
 }
 
 .pillar-icon {
-  width: 46px;
-  height: 46px;
+  width: 44px;
+  height: 44px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -735,24 +764,26 @@ ul {
 }
 
 .pillar-icon svg {
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   stroke-width: 1.4;
 }
 
 .pillar-title {
   font-size: 0.82rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--navy-900);
   margin-bottom: 0.2rem;
+  overflow-wrap: break-word;
 }
 
 .pillar-desc {
   font-size: 0.78rem;
   color: var(--slate-700);
   line-height: 1.4;
+  overflow-wrap: break-word;
 }
 
 /* ==========================================================================
@@ -760,7 +791,7 @@ ul {
    ========================================================================== */
 
 .about-section {
-  padding: 6.5rem 0 5.5rem;
+  padding: 6rem 0 5rem;
   background: var(--white);
   position: relative;
   overflow: hidden;
@@ -768,17 +799,22 @@ ul {
 
 .about-top-grid {
   display: grid;
-  grid-template-columns: 1.05fr 1.25fr;
-  gap: 3.5rem;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.25fr);
+  gap: 3.25rem;
   align-items: center;
-  margin-bottom: 4.5rem;
+  margin-bottom: 4.25rem;
+}
+
+.about-narrative {
+  min-width: 0;
 }
 
 .about-narrative p {
   font-size: 1.02rem;
   color: var(--slate-700);
   line-height: 1.78;
-  margin-top: 1.35rem;
+  margin-top: 1.25rem;
+  overflow-wrap: break-word;
 }
 
 .about-legal-badge {
@@ -789,22 +825,24 @@ ul {
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   font-size: 0.85rem;
   color: var(--navy-800);
+  overflow-wrap: break-word;
 }
 
 .about-legal-badge strong {
   display: block;
-  font-size: 0.76rem;
-  letter-spacing: 0.14em;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--gold-600);
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.25rem;
 }
 
 .about-actions {
   margin-top: 2rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
+  gap: 0.9rem;
 }
 
 /* Interactive Real Satellite Geographic Trade Corridor Map */
@@ -815,7 +853,9 @@ ul {
   border-radius: var(--radius-lg);
   padding: 0;
   box-shadow: none;
-  overflow: visible;
+  overflow: hidden;
+  min-width: 0;
+  width: 100%;
 }
 
 .trade-map-svg-wrap {
@@ -889,9 +929,9 @@ ul {
 .map-corridor-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
-  margin-top: 1.25rem;
-  padding-top: 1.1rem;
+  gap: 0.5rem;
+  margin-top: 1.15rem;
+  padding-top: 1rem;
   border-top: 1px solid rgba(10, 25, 47, 0.08);
 }
 
@@ -899,14 +939,14 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  padding: 0.4rem 0.8rem;
+  padding: 0.38rem 0.75rem;
   background: var(--white);
   border: 1px solid var(--slate-200);
   border-radius: 999px;
   font-size: 0.74rem;
   font-weight: 600;
   color: var(--navy-900);
-  transition: all 0.2s ease;
+  max-width: 100%;
 }
 
 .corridor-pill::before {
@@ -915,12 +955,13 @@ ul {
   height: 6px;
   border-radius: 50%;
   background: var(--gold-500);
+  flex-shrink: 0;
 }
 
-/* Showcase Split Panel (Draft 1 Architectural Wood + Corporate Values without fake numbers) */
+/* Showcase Split Panel */
 .about-showcase-grid {
   display: grid;
-  grid-template-columns: 1fr 1.35fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
@@ -929,9 +970,10 @@ ul {
 
 .wood-visual-panel {
   position: relative;
-  min-height: 360px;
+  min-height: 340px;
   background-color: var(--navy-900);
   overflow: hidden;
+  min-width: 0;
 }
 
 .wood-visual-panel img {
@@ -952,14 +994,14 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 2.25rem;
+  padding: 2rem;
   color: var(--white);
 }
 
 .wood-keywords {
   font-size: 0.82rem;
   font-weight: 600;
-  letter-spacing: 0.26em;
+  letter-spacing: 0.22em;
   line-height: 1.95;
   text-transform: uppercase;
 }
@@ -976,43 +1018,47 @@ ul {
 .corporate-values-panel {
   background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-800) 100%);
   color: var(--white);
-  padding: 3rem;
+  padding: 2.75rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 0;
 }
 
 .values-header {
-  margin-bottom: 2rem;
+  margin-bottom: 1.85rem;
 }
 
 .values-kicker {
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   font-weight: 600;
-  letter-spacing: 0.26em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold-300);
   margin-bottom: 0.5rem;
+  overflow-wrap: break-word;
 }
 
 .values-heading {
   font-family: var(--font-serif);
-  font-size: 1.9rem;
+  font-size: clamp(1.5rem, 2.5vw, 1.9rem);
   font-weight: 600;
   color: var(--white);
+  line-height: 1.25;
 }
 
 .values-pillars-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  padding-top: 1.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.35rem;
+  padding-top: 1.65rem;
   border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .value-col {
   border-right: 1px solid rgba(255, 255, 255, 0.12);
-  padding-right: 1.25rem;
+  padding-right: 1.15rem;
+  min-width: 0;
 }
 
 .value-col:last-child {
@@ -1022,33 +1068,35 @@ ul {
 
 .value-roman {
   font-family: var(--font-serif);
-  font-size: 1.65rem;
+  font-size: 1.55rem;
   font-style: italic;
   color: var(--gold-400);
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.3rem;
 }
 
 .value-name {
-  font-size: 0.85rem;
+  font-size: 0.83rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--white);
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.4rem;
+  overflow-wrap: break-word;
 }
 
 .value-text {
   font-size: 0.82rem;
   color: rgba(255, 255, 255, 0.74);
   line-height: 1.55;
+  overflow-wrap: break-word;
 }
 
 /* ==========================================================================
-   OUR SERVICES SECTION (4 Flagship Cards from Draft 2)
+   OUR SERVICES SECTION (4 Flagship Cards)
    ========================================================================== */
 
 .services-section {
-  padding: 6rem 0;
+  padding: 5.5rem 0;
   background: var(--cream-50);
   border-top: 1px solid var(--cream-200);
 }
@@ -1057,8 +1105,8 @@ ul {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 2rem;
-  margin-bottom: 3.25rem;
+  gap: 1.75rem;
+  margin-bottom: 3rem;
 }
 
 .section-tagline-right {
@@ -1066,11 +1114,12 @@ ul {
   font-weight: 500;
   color: var(--slate-700);
   text-align: right;
+  max-width: 440px;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
@@ -1082,6 +1131,7 @@ ul {
   box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
+  min-width: 0;
   transition: transform 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out), border-color 0.35s ease;
   cursor: pointer;
 }
@@ -1094,7 +1144,7 @@ ul {
 
 .service-img-wrap {
   position: relative;
-  height: 205px;
+  height: 200px;
   overflow: hidden;
   background: var(--navy-900);
 }
@@ -1111,22 +1161,23 @@ ul {
 }
 
 .service-body {
-  padding: 1.5rem;
+  padding: 1.4rem;
   display: flex;
   flex-direction: column;
   flex: 1;
+  min-width: 0;
 }
 
 .service-top-row {
   display: flex;
   align-items: flex-start;
-  gap: 0.95rem;
+  gap: 0.85rem;
   margin-bottom: 1rem;
 }
 
 .service-icon {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   flex-shrink: 0;
   color: var(--navy-900);
   display: flex;
@@ -1135,23 +1186,25 @@ ul {
 }
 
 .service-icon svg {
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   stroke-width: 1.5;
 }
 
 .service-title {
-  font-size: 1.04rem;
+  font-size: 1.02rem;
   font-weight: 700;
   color: var(--navy-900);
   margin-bottom: 0.35rem;
   line-height: 1.3;
+  overflow-wrap: break-word;
 }
 
 .service-short {
   font-size: 0.84rem;
   color: var(--slate-700);
   line-height: 1.55;
+  overflow-wrap: break-word;
 }
 
 .service-footer {
@@ -1160,10 +1213,11 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.5rem;
   border-top: 1px solid var(--cream-100);
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gold-600);
 }
@@ -1172,6 +1226,7 @@ ul {
   width: 28px;
   height: 28px;
   border-radius: 50%;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1187,7 +1242,7 @@ ul {
 }
 
 /* ==========================================================================
-   TRADE DIVISIONS & COMMODITIES (NACE 46.73 / 46.83 + Maritime)
+   TRADE DIVISIONS & COMMODITIES (NACE 46.73 / 46.83)
    ========================================================================== */
 
 .divisions-section {
@@ -1198,17 +1253,18 @@ ul {
 
 .divisions-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.75rem;
+  margin-top: 2.75rem;
 }
 
 .division-card {
   position: relative;
-  padding: 2.35rem 2rem;
+  padding: 2.15rem 1.85rem;
   background: var(--cream-50);
   border: 1px solid var(--cream-200);
   border-radius: var(--radius-md);
+  min-width: 0;
   transition: all 0.3s var(--ease-out);
 }
 
@@ -1226,18 +1282,21 @@ ul {
   color: var(--gold-600);
   font-size: 0.68rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   border-radius: var(--radius-sm);
-  margin-bottom: 1.15rem;
+  margin-bottom: 1.1rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .division-title {
   font-family: var(--font-serif);
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   font-weight: 600;
   color: var(--navy-900);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.7rem;
+  overflow-wrap: break-word;
 }
 
 .division-desc {
@@ -1245,6 +1304,7 @@ ul {
   color: var(--slate-700);
   line-height: 1.65;
   margin-bottom: 1.35rem;
+  overflow-wrap: break-word;
 }
 
 .division-tags {
@@ -1254,13 +1314,14 @@ ul {
 }
 
 .division-tag {
-  padding: 0.32rem 0.7rem;
+  padding: 0.32rem 0.68rem;
   background: var(--white);
   border: 1px solid var(--cream-300);
   border-radius: var(--radius-sm);
   font-size: 0.74rem;
   font-weight: 600;
   color: var(--navy-800);
+  max-width: 100%;
 }
 
 /* ==========================================================================
@@ -1269,7 +1330,7 @@ ul {
 
 .cta-banner {
   position: relative;
-  min-height: 290px;
+  min-height: 270px;
   display: flex;
   align-items: center;
   background-color: var(--navy-950);
@@ -1297,22 +1358,24 @@ ul {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  padding: 4rem 2rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .cta-banner-title {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 3.4vw, 2.9rem);
+  font-size: clamp(1.85rem, 3.4vw, 2.85rem);
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  line-height: 1.12;
+  line-height: 1.15;
   color: var(--white);
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.55rem;
+  overflow-wrap: break-word;
 }
 
 .cta-banner-sub {
-  font-size: 1rem;
+  font-size: 0.98rem;
   color: rgba(255, 255, 255, 0.85);
 }
 
@@ -1321,25 +1384,26 @@ ul {
    ========================================================================== */
 
 .contact-section {
-  padding: 6rem 0;
+  padding: 5.5rem 0;
   background: var(--cream-50);
 }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap: 3.5rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: 2.75rem;
   align-items: start;
 }
 
 .hq-card {
   background: var(--navy-900);
   color: var(--white);
-  padding: 2.75rem;
+  padding: 2.5rem;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   position: relative;
   overflow: hidden;
+  min-width: 0;
 }
 
 .hq-card::before {
@@ -1354,30 +1418,33 @@ ul {
 
 .hq-title {
   font-family: var(--font-serif);
-  font-size: 1.85rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 0.4rem;
+  overflow-wrap: break-word;
 }
 
 .hq-entity {
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   color: var(--gold-400);
   text-transform: uppercase;
-  margin-bottom: 1.85rem;
+  margin-bottom: 1.75rem;
+  overflow-wrap: break-word;
 }
 
 .hq-details-list {
   display: flex;
   flex-direction: column;
-  gap: 1.35rem;
+  gap: 1.25rem;
 }
 
 .hq-detail-item {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.9rem;
+  min-width: 0;
 }
 
 .hq-detail-icon {
@@ -1393,18 +1460,20 @@ ul {
 }
 
 .hq-detail-label {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--gold-300);
   margin-bottom: 0.2rem;
 }
 
 .hq-detail-value {
-  font-size: 0.94rem;
+  font-size: 0.92rem;
   color: rgba(255, 255, 255, 0.92);
   line-height: 1.55;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .hq-detail-value a:hover {
@@ -1414,25 +1483,27 @@ ul {
 /* Contact Inquiry Form */
 .contact-form-card {
   background: var(--white);
-  padding: 2.75rem;
+  padding: 2.5rem;
   border-radius: var(--radius-lg);
   border: 1px solid var(--cream-200);
   box-shadow: var(--shadow-sm);
+  min-width: 0;
 }
 
 .form-grid-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.15rem;
 }
 
 .form-group {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.2rem;
+  min-width: 0;
 }
 
 .form-label {
   display: block;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1444,7 +1515,8 @@ ul {
 .form-select,
 .form-textarea {
   width: 100%;
-  padding: 0.85rem 1rem;
+  max-width: 100%;
+  padding: 0.85rem 0.95rem;
   font-family: inherit;
   font-size: 0.92rem;
   color: var(--navy-900);
@@ -1484,25 +1556,30 @@ ul {
 }
 
 /* ==========================================================================
-   FOOTER (Matches Draft 2 Dark Navy Prestige Layout)
+   FOOTER (Dark Navy Prestige Layout)
    ========================================================================== */
 
 .site-footer {
   background-color: var(--navy-950);
   color: rgba(255, 255, 255, 0.78);
-  padding: 4.5rem 0 0;
+  padding: 4.25rem 0 0;
   border-top: 1px solid rgba(197, 160, 89, 0.22);
+  overflow: hidden;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.35fr 0.85fr 1.25fr 0.95fr;
-  gap: 2.5rem;
-  padding-bottom: 3.5rem;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.85fr) minmax(0, 1.25fr) minmax(0, 0.95fr);
+  gap: 2.25rem;
+  padding-bottom: 3.25rem;
+}
+
+.footer-grid > div {
+  min-width: 0;
 }
 
 .footer-brand-desc {
-  margin-top: 1.2rem;
+  margin-top: 1.1rem;
   font-size: 0.88rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.7);
@@ -1511,16 +1588,16 @@ ul {
 .footer-heading {
   font-size: 0.82rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--white);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.15rem;
 }
 
 .footer-links {
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
+  gap: 0.6rem;
 }
 
 .footer-links a {
@@ -1535,14 +1612,16 @@ ul {
 .footer-office-list {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 0.85rem;
   font-size: 0.88rem;
 }
 
 .footer-office-item {
   display: flex;
   align-items: flex-start;
-  gap: 0.75rem;
+  gap: 0.7rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .footer-office-item svg {
@@ -1557,7 +1636,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 1.85rem;
+  margin-bottom: 1.65rem;
 }
 
 .social-btn {
@@ -1588,32 +1667,35 @@ ul {
 .footer-motto-words {
   font-size: 0.68rem;
   font-weight: 600;
-  letter-spacing: 0.24em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.65);
+  overflow-wrap: break-word;
 }
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1.5rem 0;
+  padding: 1.4rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   color: rgba(255, 255, 255, 0.55);
 }
 
 .footer-legal-links {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1.25rem;
 }
 
 .footer-legal-links button {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
+  text-align: left;
   transition: color 0.2s ease;
 }
 
@@ -1634,7 +1716,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1.25rem;
   opacity: 0;
   visibility: hidden;
   transition: all 0.28s var(--ease-out);
@@ -1663,7 +1745,7 @@ ul {
 .modal-header {
   background: var(--navy-900);
   color: var(--white);
-  padding: 1.75rem 2rem;
+  padding: 1.5rem 1.75rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1672,14 +1754,16 @@ ul {
 
 .modal-title {
   font-family: var(--font-serif);
-  font-size: 1.65rem;
+  font-size: 1.55rem;
   font-weight: 600;
   color: var(--white);
+  line-height: 1.25;
 }
 
 .modal-close {
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   color: var(--white);
@@ -1694,10 +1778,10 @@ ul {
 }
 
 .modal-body {
-  padding: 2rem;
+  padding: 1.75rem;
   color: var(--slate-700);
-  font-size: 0.95rem;
-  line-height: 1.75;
+  font-size: 0.94rem;
+  line-height: 1.72;
   max-height: 70vh;
   overflow-y: auto;
 }
@@ -1720,37 +1804,43 @@ ul {
   color: var(--gold-500);
   font-size: 0.75rem;
   margin-top: 0.2rem;
+  flex-shrink: 0;
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN
+   RESPONSIVE DESIGN (Tablet & Mobile Overhaul - Zero Overflow)
    ========================================================================== */
 
-@media (max-width: 1100px) {
+@media (max-width: 1120px) {
   .pillars-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.75rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
   }
   .pillar-item:nth-child(2) {
     border-right: none;
+    padding-right: 0;
   }
   .about-top-grid,
   .about-showcase-grid,
   .contact-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
   }
   .services-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .divisions-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 900px) {
+  :root {
+    --header-height: 76px;
+  }
   .main-nav,
   .header-cta {
     display: none;
@@ -1766,20 +1856,28 @@ ul {
     left: 0;
     width: 100%;
     background: var(--white);
-    padding: 1.5rem 2rem;
+    padding: 1.35rem 1.5rem;
     border-bottom: 1px solid var(--cream-200);
     box-shadow: var(--shadow-md);
     align-items: flex-start;
-    gap: 1rem;
+    gap: 0.9rem;
+  }
+  .hero-section {
+    height: auto;
+    max-height: none;
+    min-height: 540px;
   }
   .hero-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    padding-top: 2.75rem;
+    padding-bottom: 2.25rem;
   }
   .hero-aside {
     display: none;
   }
   .values-pillars-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.15rem;
   }
   .value-col {
     border-right: none;
@@ -1795,79 +1893,154 @@ ul {
   .cta-banner-inner {
     flex-direction: column;
     align-items: flex-start;
+    gap: 1rem;
   }
   .section-tagline-right {
     text-align: left;
+    max-width: 100%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .container {
-    padding: 0 1.15rem;
+    padding: 0 1.1rem;
+  }
+  .header-inner {
+    gap: 0.5rem;
+  }
+  .brand-logo {
+    gap: 0.65rem;
   }
   .brand-crest {
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
   }
   .brand-name {
-    font-size: 1.28rem;
-    letter-spacing: 0.28em;
-    margin-right: -0.28em;
+    font-size: 1.18rem;
+    letter-spacing: 0.24em;
+    margin-right: -0.24em;
   }
   .brand-sub {
-    font-size: 0.5rem;
-    letter-spacing: 0.16em;
-    text-indent: 0.16em;
-    gap: 0.4rem;
+    font-size: 0.46rem;
+    letter-spacing: 0.14em;
+    text-indent: 0.14em;
+    gap: 0.35rem;
+    margin-top: 0.28rem;
   }
   .brand-sub::before,
   .brand-sub::after {
-    min-width: 10px;
+    min-width: 8px;
   }
-  .hero-section {
-    height: auto;
-    max-height: none;
-    min-height: 580px;
-    padding: 2.25rem 0 7.5rem;
+  .header-actions {
+    gap: 0.45rem;
+  }
+  .lang-trigger {
+    padding: 0.42rem 0.6rem;
+    font-size: 0.72rem;
+  }
+  .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    gap: 0.5rem;
+  }
+  .eyebrow::after {
+    width: 24px;
+  }
+  .hero-container {
+    padding-top: 2rem;
+    padding-bottom: 1.75rem;
   }
   .hero-kicker {
-    font-size: 0.65rem;
-    letter-spacing: 0.16em;
+    font-size: 0.64rem;
+    letter-spacing: 0.14em;
   }
   .hero-title {
-    font-size: clamp(2.1rem, 8.5vw, 2.75rem);
-    word-wrap: break-word;
+    font-size: clamp(1.95rem, 8vw, 2.55rem);
+    margin-bottom: 1rem;
   }
   .hero-description {
-    font-size: 0.96rem;
+    font-size: 0.94rem;
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+  }
+  .hero-actions,
+  .about-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .hero-actions .btn,
+  .about-actions .btn,
+  .cta-banner-inner .btn {
+    width: 100%;
+    padding: 0.88rem 1.25rem;
+  }
+  .hero-bottom-inner {
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    gap: 0.55rem;
+  }
+  .hero-coords {
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+  }
+  .hero-scene-tabs {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 0.4rem;
+    width: 100%;
+  }
+  .scene-tab {
+    padding: 0.45rem 0.5rem;
+    font-size: 0.64rem;
+    letter-spacing: 0.06em;
+    line-height: 1.3;
+  }
+  .pillars-strip {
+    padding: 1.5rem 0;
   }
   .pillars-grid,
   .services-grid,
   .form-grid-row,
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.15rem;
   }
   .pillar-item {
     border-right: none;
     border-bottom: 1px solid var(--cream-300);
+    padding-right: 0;
     padding-bottom: 1rem;
   }
   .pillar-item:last-child {
     border-bottom: none;
     padding-bottom: 0;
   }
-  .hero-bottom-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0.75rem 1.15rem;
-    gap: 0.5rem;
+  .about-section,
+  .services-section,
+  .divisions-section,
+  .contact-section {
+    padding: 3.75rem 0;
   }
-  .hero-coords {
-    font-size: 0.62rem;
-    letter-spacing: 0.12em;
+  .wood-visual-panel {
+    min-height: 240px;
   }
-  .scene-tab {
-    padding: 0.4rem 0.6rem;
-    font-size: 0.66rem;
+  .wood-visual-overlay,
+  .corporate-values-panel,
+  .division-card,
+  .hq-card,
+  .contact-form-card {
+    padding: 1.5rem 1.25rem;
+  }
+  .corridor-pill {
+    font-size: 0.68rem;
+    padding: 0.35rem 0.65rem;
+  }
+  .modal-header,
+  .modal-body {
+    padding: 1.25rem;
   }
 }
