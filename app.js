@@ -841,7 +841,12 @@ function setLanguage(lang) {
     asideListEl.innerHTML = t.hero.asideList.map((w) => `<span>${w}</span>`).join('');
   }
 
-  // Render Map Corridor Pills
+  // Render Map Corridor Pills & SVG Country Label
+  const svgGreeceLabel = document.getElementById('svgGreeceLabel');
+  if (svgGreeceLabel) {
+    svgGreeceLabel.textContent = lang === 'el' ? 'ΕΛΛΑΔΑ' : lang === 'tr' ? 'YUNANİSTAN' : 'GREECE';
+  }
+
   const corridorContainer = document.getElementById('mapCorridorPills');
   if (corridorContainer) {
     corridorContainer.innerHTML = t.about.corridors

@@ -797,39 +797,37 @@ ul {
   gap: 1rem;
 }
 
-/* Interactive Trade Corridor Map Card */
+/* Interactive Real Geographic Trade Corridor Map */
 .network-map-card {
   position: relative;
-  background: linear-gradient(145deg, #f9f8f4 0%, #eef2f7 100%);
-  border: 1px solid var(--slate-200);
-  border-radius: var(--radius-lg);
-  padding: 2rem;
-  box-shadow: var(--shadow-sm);
-  overflow: hidden;
+  background: var(--white);
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  overflow: visible;
 }
 
-.map-header-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.map- motto-tag {
-  font-size: 0.72rem;
+.map-floating-motto {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 3;
+  font-size: 0.76rem;
   font-weight: 700;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--navy-900);
-  text-align: right;
+  text-align: left;
   line-height: 1.65;
+  max-width: 155px;
+  pointer-events: none;
 }
 
 .trade-map-svg-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 840 / 520;
 }
 
 .trade-map-svg {
@@ -841,16 +839,17 @@ ul {
 .map-route-arc {
   fill: none;
   stroke: var(--gold-500);
-  stroke-width: 1.8;
-  stroke-dasharray: 6 4;
-  animation: routeFlow 22s linear infinite;
+  stroke-width: 1.35;
+  stroke-dasharray: 5 5;
+  opacity: 0.85;
+  animation: routeFlow 24s linear infinite;
 }
 
 .map-route-solid {
   fill: none;
-  stroke: var(--gold-600);
-  stroke-width: 1.5;
-  opacity: 0.65;
+  stroke: #c5a059;
+  stroke-width: 1.25;
+  opacity: 0.82;
 }
 
 @keyframes routeFlow {
