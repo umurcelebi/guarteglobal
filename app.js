@@ -6,7 +6,7 @@
 const I18N = {
   en: {
     metaTitle: 'GUARTE GLOBAL | International Maritime & Wholesale Trade Solutions',
-    brandSub: 'GLOBAL MARITIME & TRADE',
+    brandSub: 'GLOBAL TRADE',
     nav: {
       home: 'Home',
       about: 'About',
@@ -237,7 +237,7 @@ const I18N = {
 
   gr: {
     metaTitle: 'GUARTE GLOBAL | Διεθνείς Ναυτιλιακές Μεταφορές & Χονδρικό Εμπόριο',
-    brandSub: 'HELLAS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.',
+    brandSub: 'GLOBAL TRADE',
     nav: {
       home: 'Αρχική',
       about: 'Εταιρεία',
@@ -468,7 +468,7 @@ const I18N = {
 
   tr: {
     metaTitle: 'GUARTE GLOBAL | Uluslararası Deniz Nakliyatı ve Dış Ticaret Çözümleri',
-    brandSub: 'KÜRESEL DENİZCİLİK & TİCARET',
+    brandSub: 'GLOBAL TRADE',
     nav: {
       home: 'Ana Sayfa',
       about: 'Hakkımızda',
