@@ -36,7 +36,6 @@ const I18N = {
       btnServices: 'Our Services',
       btnAbout: 'About Guarte',
       asideList: ['PEOPLE', 'PRODUCTS', 'MARKETS', 'OPPORTUNITIES'],
-      asideMotto: 'FROM GREECE TO A MORE CONNECTED TOMORROW',
       tab1: 'Corinth & Aegean Route',
       tab2: 'Straits & Global Route'
     },
@@ -267,7 +266,6 @@ const I18N = {
       btnServices: 'Οι Υπηρεσίες μας',
       btnAbout: 'Σχετικά με εμάς',
       asideList: ['ΑΝΘΡΩΠΟΙ', 'ΠΡΟΪΟΝΤΑ', 'ΑΓΟΡΕΣ', 'ΕΥΚΑΙΡΙΕΣ'],
-      asideMotto: 'ΑΠΟ ΤΗΝ ΕΛΛΑΔΑ ΣΕ ΕΝΑ ΠΙΟ ΣΥΝΔΕΔΕΜΕΝΟ ΑΥΡΙΟ',
       tab1: 'Διάδρομος Κορίνθου & Αιγαίου',
       tab2: 'Διάδρομος Στενών & Παγκόσμιες Αγορές'
     },
@@ -498,7 +496,6 @@ const I18N = {
       btnServices: 'Hizmetlerimiz',
       btnAbout: 'Hakkımızda',
       asideList: ['İNSAN', 'ÜRÜN', 'PAZARLAR', 'FIRSATLAR'],
-      asideMotto: 'YUNANİSTAN MERKEZLİ DAHA BAĞLANTILI BİR YARINA',
       tab1: 'Korint & Ege Rotası',
       tab2: 'Boğazlar & Küresel Rota'
     },
